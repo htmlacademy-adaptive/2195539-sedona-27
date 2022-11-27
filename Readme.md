@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Roman Golubev](https://up.htmlacademy.ru/adaptive/27/user/2195539).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Верхотуров](https://htmlacademy.ru/profile/id174385).
 
 ---
 
