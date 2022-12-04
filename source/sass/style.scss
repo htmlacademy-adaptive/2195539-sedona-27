@@ -1,1 +1,8 @@
-// Начните писать стили здесь
+@use "./common.scss";
+@use "./variables.scss";
+@use "./blocks/button.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/advantages.scss";

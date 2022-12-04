@@ -1,0 +1,17 @@
+$width:320px;
+
+.main-header {
+  background-color: #ffffff;
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between; 
+  margin: 0 auto;
+  width: $width;
+}
+
+.main-header__logo {
+  margin-left: 67px;  
+  margin-bottom: -40px;  
+  z-index: 1;
+}
+
