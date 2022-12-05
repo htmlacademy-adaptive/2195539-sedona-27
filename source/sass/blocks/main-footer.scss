@@ -1,0 +1,33 @@
+$width:320px;
+$default:#ffffff;
+
+.main-footer__wrapper{
+  background-color: $default;
+  min-height: 233px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; 
+  margin: 0 auto;
+  width: $width;
+}
+
+.social__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;   
+}
+
+.social__list {
+    display: flex;
+    margin: 0;
+    background-color: tomato;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    list-style: none;
+}
