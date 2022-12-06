@@ -29,9 +29,8 @@ $primary: #81b3d2;
 
 .social__list {
   display: flex;
-  flex-direction: row; 
-  margin: 0;
-  flex-direction: row;
+  min-width: 156px; 
+  margin: 0;  
   justify-content: space-between;
   padding-left: 0;
   align-items: center;
