@@ -1,0 +1,45 @@
+.form__legend {
+    margin: 0;
+    padding-top: 24px;
+}
+
+.form__name {
+    margin: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;    
+}
+
+.form__list {
+  padding-left: 0;
+  margin: 0;   
+}
+
+.form__item {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;         
+}
+
+.form__label {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;     
+     }
