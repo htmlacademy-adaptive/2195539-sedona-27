@@ -1,5 +1,8 @@
 .button {
-  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: $default;
   font-family: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -10,5 +13,5 @@
   line-height: 26px;
   text-transform: uppercase;
   align-items: center;
-  border: none; 
+  border: none;   
 }

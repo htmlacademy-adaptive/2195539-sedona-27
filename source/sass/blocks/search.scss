@@ -1,4 +1,4 @@
-$primary: #81b3d2;
+
 
 .search {
     padding-top: 38px;
@@ -32,7 +32,8 @@ $primary: #81b3d2;
     padding-bottom: 32px;
 }
 
-.search__button {
+.search__button {    
     background-color: $primary;
-    padding: 16px 49px;     
+    width: 100%;
+    min-height: 58px;    
 }
