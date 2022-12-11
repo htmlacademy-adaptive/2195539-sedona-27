@@ -40,14 +40,15 @@
   <main class="main-container">
     <section class="hero-form">
       <h1 class="visually-hidden">Форма обратной связи.</h1>
-      <div class="hero-form__wrapper"> 
+      <div class="hero-form__wrapper">
         <header class="hero-form__header">
           <a class="hero-form__link" href="#">
-            <img class="hero-form__image" src="img/sedona.svg" width="280" height="260" alt="Welcome to gorgeous Sedona, because the Grand Canyon sucks!">
-          </a>      
-    </header>
-  </div>
-    </section>    
+            <img class="hero-form__image" src="img/sedona.svg" width="280" height="260"
+              alt="Welcome to gorgeous Sedona, because the Grand Canyon sucks!">
+          </a>
+        </header>
+      </div>
+    </section>
     <section class="feedback">
       <h2 class="visually-hidden">Заполните данные о себе.</h2>
       <div class="feedback__wrapper">
@@ -82,18 +83,18 @@
               <li class="form__item">
                 <label class="form__label" for="user_phone">Контактный телефон*:</label>
                 <div class="input__wrapper">
-                <input class="form__input input input__contact" type="tel" name="phone" required id="user_phone"
-                  value="Введите телефон">
-                <span class="form__phone-icon"></span>
-              </div>
+                  <input class="form__input input input__contact" type="tel" name="phone" required id="user_phone"
+                    value="Введите телефон">
+                  <span class="form__phone-icon"></span>
+                </div>
               </li>
               <li class="form__item">
                 <label class="form__label" for="user_email">Электронная почта*:</label>
                 <div class="input__wrapper">
-                <input class="form__input input input__contact" type="email" name="email" required id="user_email"
-                  value="Введите e-mail">
-                <span class="form__email-icon"></span>
-              </div>
+                  <input class="form__input input input__contact" type="email" name="email" required id="user_email"
+                    value="Введите e-mail">
+                  <span class="form__email-icon"></span>
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -159,8 +160,8 @@
           <fieldset class="form__landmark form__name">
             <legend class="form__legend">Опишите свои эмоции:</legend>
             <label class="form__label" for="feeling">
-            <textarea class="form__input field" name="emotions" id="feeling"
-              placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__input field" name="emotions" id="feeling"
+                placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
           <fieldset class="form__name">
@@ -228,19 +229,26 @@
     </div>
   </footer>
   <!-- модальное окно ошибки -->
-  <div class="modal-error">
-    <div class="modal-error__wrapper">
-      <p class="modal-error__header">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+  <div class="modal-error___wrapper modal-error--close">
+    <div class="modal-error">
+      <div class="modal-error__title">
+        <p class="modal-error__header">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+      </div>
+      <div class="modal-error__info">
       <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
       <button class="modal-error__button button" type="button">OK</button>
     </div>
   </div>
   <!-- модальное окно информационное-->
-  <div class="modal-info">
-    <div class="modal-info__wrapper">
+  <div class="modal-info__wrapper modal-info--close">
+  <div class="modal-info"> 
+    <div class="modal-info__title"> 
       <p class="modal-info__header">Ваш отзыв отправлен!</p>
+    </div> <div class="modal-info__info">
       <p class="modal-info__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
         опубликуем его на сайте.</p>
+      </div> 
       <button class="modal-info__button button" type="button">ЗАКРЫТЬ ОКНО</button>
     </div>
   </div>
