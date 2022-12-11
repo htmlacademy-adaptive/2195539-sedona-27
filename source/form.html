@@ -10,7 +10,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo.svg" width="185px" height="96px" alt="Логотип сайта Седона.">
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle main-nav__toggle--open button" type="button"><span class="visually-hidden">Открыть
@@ -40,13 +40,14 @@
   <main class="main-container">
     <section class="hero-form">
       <h1 class="visually-hidden">Форма обратной связи.</h1>
-      <div class="hero-form__wrapper">
+      <div class="hero-form__wrapper"> 
         <header class="hero-form__header">
-          <a class="hero-form__link" href="#"><img class="hero-form__image" src="img/sedona.svg" width="280"
-              height="260" alt="Welcome to gorgeous Sedona, because the Grand Canyon sucks!"></a>
-      </div>
-    </section>
+          <a class="hero-form__link" href="#">
+            <img class="hero-form__image" src="img/sedona.svg" width="280" height="260" alt="Welcome to gorgeous Sedona, because the Grand Canyon sucks!">
+          </a>      
     </header>
+  </div>
+    </section>    
     <section class="feedback">
       <h2 class="visually-hidden">Заполните данные о себе.</h2>
       <div class="feedback__wrapper">
@@ -63,81 +64,109 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="user-first">ИМЯ*:</label>
-                <input class="form__input input" type="text" name="name" required id="user-first" placeholder="Пётр">
+                <input class="form__input input" type="text" name="name" required id="user-first" value="Пётр">
               </li>
               <li class="form__item">
                 <label class="form__label" for="user-second">ФАМИЛИЯ*:</label>
-                <input class="form__input input" type="text" name="surname" required id="user-second" placeholder="Пустота">
+                <input class="form__input input" type="text" name="surname" required id="user-second" value="Пустота">
               </li>
               <li class="form__item">
                 <label class="form__label" for="user-third">ОТЧЕСТВО:</label>
-                <input class="form__input input" type="text" name="patronymic" id="user-third" placeholder="Викторович">
+                <input class="form__input input" type="text" name="patronymic" id="user-third" value="Викторович">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__contacts">
+          <fieldset class="form__contacts form__name">
             <legend class="form__legend">Контактная информация:</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="user_phone">Контактный телефон*:</label>
-                <input class="form__input input" type="tel" name="phone" required id="user_phone"
-                  placeholder="Введите телефон">
+                <div class="input__wrapper">
+                <input class="form__input input input__contact" type="tel" name="phone" required id="user_phone"
+                  value="Введите телефон">
                 <span class="form__phone-icon"></span>
+              </div>
               </li>
               <li class="form__item">
                 <label class="form__label" for="user_email">Электронная почта*:</label>
-                <input class="form__input input" type="email" name="email" required id="user_email"
-                  placeholder="Введите e-mail">
+                <div class="input__wrapper">
+                <input class="form__input input input__contact" type="email" name="email" required id="user_email"
+                  value="Введите e-mail">
                 <span class="form__email-icon"></span>
+              </div>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__feedback">
+          <fieldset class="form__feedback form__name">
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label" for="user_plus">Скорее положительное</label>
-                <input class="form__input" type="radio" name="feedback" id="user_plus" checked>
+                <label class="form__label form__label-check" for="user_plus">
+                  <input class="form__input" type="radio" name="feedback" id="user_plus" checked>
+                  <span class="form__item form__item-mark"></span>
+                  <span class="form__item form__item-label">Скорее положительное</span>
+                </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="user_minus">Скорее отрицательное</label>
-                <input class="form__input" type="radio" name="feedback" id="user_minus">
+                <label class="form__label form__label-check" for="user_minus">
+                  <input class="form__input" type="radio" name="feedback" id="user_minus">
+                  <span class="form__item form__item-mark"></span>
+                  <span class="form__item form__item-label">Скорее отрицательное</span>
+                </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="user_unknown">Затрудняюсь ответить</label>
-                <input class="form__input" type="radio" name="feedback" id="user_unknown">
+                <label class="form__label form__label-check" for="user_unknown">
+                  <input class="form__input" type="radio" name="feedback" id="user_unknown">
+                  <span class="form__item form__item-mark"></span>
+                  <span class="form__item form__item-label">Затрудняюсь ответить</span>
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__landmark">
+          <fieldset class="form__landmark form__name">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label" for="user_bridge">Мост Дьявола</label>
-                <input class="form__input" type="checkbox" name="bridge" id="user_bridge" checked>
+                <label class="form__label form__label-check" for="user_bridge">
+                  <input class="form__input" type="checkbox" name="bridge" id="user_bridge" checked>
+                  <span class="form__item form__item-mark"></span>
+                  <span class="form__item form__item-label">Мост Дьявола</span>
+                </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="user_mountain">Гора-Колокол</label>
-                <input class="form__input" type="checkbox" name="mountain" id="user_mountain" checked>
+                <label class="form__label form__label-check" for="user_mountain">
+                  <input class="form__input" type="checkbox" name="mountain" id="user_mountain" checked>
+                  <span class="form__item form__item-mark"></span>
+                  <span class="form__item form__item-label">Гора-Колокол</span>
+                </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="user_park">Слайд-парк</label>
-                <input class="form__input" type="checkbox" name="park" id="user_park" checked>
+                <label class="form__label form__label-check" for="user_park">
+                  <input class="form__input" type="checkbox" name="park" id="user_park" checked>
+                  <span class="form__item form__item-mark"></span>
+                  <span class="form__item form__item-label">Слайд-парк</span>
+                </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="user_rock">Красные скалы</label>
-                <input class="form__input" type="checkbox" name="rock" id="user_rock">
+                <label class="form__label form__label-check" for="user_rock">
+                  <input class="form__input" type="checkbox" name="rock" id="user_rock">
+                  <span class="form__item form__item-mark"></span>
+                  <span class="form__item form__item-label">Красные скалы</span>
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__landmark">
+          <fieldset class="form__landmark form__name">
             <legend class="form__legend">Опишите свои эмоции:</legend>
-            <label class="form__label" for="feeling"></label>
-            <textarea class="form__input field" name="emotions" cols="30" rows="10" id="feeling"
+            <label class="form__label" for="feeling">
+            <textarea class="form__input field" name="emotions" id="feeling"
               placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
           </fieldset>
-          <button class="form__feedback-button button">ОТПРАВИТЬ ОТЗЫВ</button>
-          <span class="form__note">* — обязательные поля</span>
+          <fieldset class="form__name">
+            <button class="form__feedback-button button">ОТПРАВИТЬ ОТЗЫВ</button>
+            <span class="form__note">* — обязательные поля</span>
+          </fieldset>
         </form>
       </div>
     </section>
@@ -151,7 +180,7 @@
           <li class="social__item">
             <span class="visually-hidden">Vkontakte.</span>
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <g clip-path="url(#a)">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
