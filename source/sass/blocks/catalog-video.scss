@@ -1,0 +1,49 @@
+
+
+.catalog-video__wraper {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.catalog-video__title {
+    padding-top: 35px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 28px;
+}
+
+.catalog-video__info {    
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 40px;    
+}
+
+.catalog-video__header {   
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;   
+}
+
+.catalog-video__description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase; 
+    text-align: center;   
+}
+
+.catalog-video__icon {
+    position: absolute;
+    top: 256px;
+    z-index: 1;    
+    min-height: 54px;
+    min-width: 48px;       
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;    
+}
+
