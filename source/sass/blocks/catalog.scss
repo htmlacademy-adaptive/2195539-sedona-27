@@ -5,19 +5,19 @@
     align-items: center;
 }
 
-.catalog__wrapper {  
-   list-style: none;
+.catalog__wrapper {
+    list-style: none;
 }
 
 .catalog__list {
     margin: 0;
     list-style: none;
-    padding-left: 0;   
+    padding-left: 0;
 }
 
 .catalog__item {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     align-items: center;
     padding-top: 24px;
     width: $width;
@@ -36,19 +36,19 @@
 
 .catalog__icon {
     min-height: 25px;
-    min-width: 25px;    
+    min-width: 25px;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../img/like-icon.svg");
 }
 
-.catalog__rate {    
+.catalog__rate {
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
 }
 
-.catalog__title {    
+.catalog__title {
     padding-top: 15px;
     padding-left: 0;
     padding-right: auto;
