@@ -1,0 +1,32 @@
+.feedback__title {
+    padding-top: 35px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 28px;
+}
+
+.feedback__info {    
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.feedback__header {
+    position: relative;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.feedback__description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+}
