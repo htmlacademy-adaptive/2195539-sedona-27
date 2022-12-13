@@ -69,11 +69,12 @@
   padding-left: 16px;
 }
 
+
 .form__label-check {
   position: relative;
   display: flex;
-  gap: 16px;
   justify-content: flex-start;
+  gap: 16px;
   align-items: center;
   font-family: inherit;
   font-weight: 700;
@@ -122,8 +123,8 @@
 //   }
 
 
-.form__input[type="checkbox"]:checked+.form__item-mark::before,
-.form__input[type="checkbox"]:checked+.form__item-mark::after {
+.form__input[type="checkbox"]:checked + .form__item-mark::before,
+.form__input[type="checkbox"]:checked + .form__item-mark::after {
   position: absolute;
   top: 8px;
   left: 11px;
@@ -138,7 +139,7 @@
   border-radius: 50%;
 }
 
-.form__input[type="radio"]:checked+.form__item-mark::before {
+.form__input[type="radio"]:checked + .form__item-mark::before {
   position: absolute;
   top: 13px;
   left: 13px;
