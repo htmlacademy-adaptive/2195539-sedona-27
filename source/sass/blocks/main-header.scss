@@ -1,6 +1,7 @@
 .main-header {
+  position: relative;
   width: 320px;
-  background-color: #ff6347;
+  background-color: #a0f40f;
   min-height: 56px;
   display: flex;
   justify-content: space-between;
@@ -9,18 +10,20 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    display: grid;
-    grid-template-columns: repeat(5, 153px);
-    min-height: 56px;
-    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $tablet-width;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
-    min-height: 56px;
-    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $desktop-width;
     margin: 0 auto;
   }
 }
@@ -33,7 +36,10 @@
 
 @media (min-width: $tablet-width) {
   .main-header__logo {
-    z-index: 1;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: calc(50% - 92.5px);
   }
 }
 

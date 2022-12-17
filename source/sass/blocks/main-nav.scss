@@ -11,11 +11,36 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: $tablet-width;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: $desktop-width;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link--space {
+    padding-right: 165px;
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link--space {
+    padding-right: 165px;
+    padding-left: 35px;
+  }
+
   .site-list {
     display: flex;
     justify-content: space-between;

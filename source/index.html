@@ -8,7 +8,7 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo " href="index.html">
+    <a class="main-header__logo site-list__link " href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
     </a>
     <nav class="main-nav">
@@ -20,8 +20,8 @@
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Фото и видео</a>
+          <li class="site-list__item ">
+            <a class="site-list__link site-list__link--space" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
@@ -56,6 +56,7 @@
         </div>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item-contrast">
+            <div class="advantages__item-wrapper">
             <div class="advantages__title">
               <h3 class="advantages__header ">НАСТОЯЩИЙ ГОРОДОК</h3>
             </div>
@@ -63,8 +64,10 @@
             <div class="advantages__info">
               <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
+            </div>
             <a class="advantages__link" href="#"><img class="advantages__image" src="img/photo-city.png" width="320"
-                height="260" alt="Красивые дома."></a>
+                height="256" alt="Красивые дома.">
+            </a>
           </li>
           <li class="advantages__item advantages__item--left">
             <div class="advantages__title">
@@ -74,8 +77,7 @@
             </div>
             <div class="advantages__info">
               <p class="advantages__description advantages__description-plus">Рекомендуем пожить в <br> настоящем
-                мотеле,
-                все как в<br> кино!</p>
+                мотеле, все как в <br> кино!</p>
             </div>
           </li>
           <li class="advantages__item advantages__item--left">
@@ -163,8 +165,8 @@
   <footer class="main-footer">
     <h2 class="visually-hidden">Социальные сети</h2>
     <div class="main-footer__wrapper">
-      <div class="main-footer__social social">
         <a class="social__title" href="#">#visitSedona</a>
+        <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <span class="visually-hidden">Vkontakte.</span>
