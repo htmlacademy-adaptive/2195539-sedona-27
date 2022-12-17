@@ -1,15 +1,15 @@
 .main-footer__wrapper {
-  background-color: $default;
+  background-color: #ffa500;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  width: $width;
   padding-top: 30px;
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 23px;
+  max-width: 1200px;
 }
 
 .social__title {

@@ -1,9 +1,40 @@
-.main-nav__wrapper {
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-list {
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+// Burger button
 .main-nav__toggle {
   background-color: #ffffff;
-  padding-right: 20px;
-  padding-top: 20px;
+  min-height: 60px;
+  min-width: 60px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
