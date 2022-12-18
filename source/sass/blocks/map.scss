@@ -5,6 +5,25 @@
   height: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    overflow: hidden;
+    padding-bottom: 0;
+    position: relative;
+    min-height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__wrapper {
+    overflow: hidden;
+    padding-bottom: 0;
+    position: relative;
+    min-height: 350px;
+  }
+}
+
+
 .map__wrapper iframe {
   left: 0;
   top: 0;
