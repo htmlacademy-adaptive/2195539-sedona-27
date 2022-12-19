@@ -1,12 +1,31 @@
-$width:320px;
-
 .main-header {
+  position: relative;
+  width: 320px;
   background-color: #ffffff;
   min-height: 56px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: $width;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .main-header__logo {
@@ -15,3 +34,17 @@ $width:320px;
   z-index: 1;
 }
 
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: calc(50% - 92.5px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo {
+    z-index: 1;
+  }
+}

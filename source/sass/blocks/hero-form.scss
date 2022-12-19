@@ -11,3 +11,15 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .hero-form {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-form {
+    width: $desktop-width;
+  }
+}

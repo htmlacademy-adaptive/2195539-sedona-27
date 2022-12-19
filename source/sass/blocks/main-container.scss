@@ -5,5 +5,29 @@
   flex-grow: 1;
   margin: 0 auto;
   min-height: 100%;
-  width: $width;
+  max-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    flex-grow: 1;
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    flex-grow: 1;
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: $desktop-width;
+  }
 }
