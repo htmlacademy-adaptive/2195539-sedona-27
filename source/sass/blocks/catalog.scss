@@ -18,10 +18,37 @@
 .catalog__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 24px;
-  width: $width;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #d6d6d6;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    padding: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 33.3%;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item-first {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item-first {
+    width: 1200px;
+  }
 }
 
 .catalog__rate-wrapper {
@@ -30,8 +57,33 @@
   align-items: baseline;
   gap: 16px;
   padding-top: 16px;
-  padding-bottom: 25px;
-  padding-right: 217px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__table {
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+.catalog__image {
+  width: 100%;
 }
 
 .catalog__icon {
