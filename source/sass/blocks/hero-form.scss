@@ -1,13 +1,21 @@
 .hero-form {
-    display: flex;
-    flex-direction: column;
-    background-color: $current;
-    min-height: 160px;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/intro-triangle.svg"),
-      url("../img/back-mobile.jpg");
-    background-position: bottom, bottom;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-color: $current;
+  min-height: 160px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/intro-triangle.svg"),
+    url("../img/back-mobile.jpg");
+  background-position: bottom, bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}

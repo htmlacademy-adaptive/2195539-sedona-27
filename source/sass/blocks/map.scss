@@ -1,13 +1,22 @@
-.map__wrapper{
-    overflow:hidden;
-    padding-bottom:100%;
-    position:relative;
-    height:0;
+.map__wrapper {
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+
+
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+    padding-bottom: 0;
+    position: relative;
+    min-height: 350px;
+  }
 }
-.map__wrapper iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.map__wrapper iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }

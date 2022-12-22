@@ -5,5 +5,20 @@
   flex-grow: 1;
   margin: 0 auto;
   min-height: 100%;
-  width: $width;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    flex-grow: 1;
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
 }
