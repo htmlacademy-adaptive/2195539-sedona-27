@@ -22,6 +22,7 @@
     flex-wrap: wrap;
     width: $tablet-width;
     align-self: center;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,7 +120,6 @@
     color: $current;
   }
 }
-
 
 .main-nav--opened .main-nav__wrapper {
   position: absolute;

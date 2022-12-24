@@ -41,12 +41,18 @@
     align-items: center;
     min-height: 256px;
     width: 256px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 400px;
-    width: 330px;
+    width: 400px;
   }
+}
+
+.advantages__title {
+  padding-top: 32px;
 }
 
 .advantages__info {
@@ -54,6 +60,16 @@
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 44px;
+    padding-bottom: 59px;
+  }
 }
 
 .advantages__header {
@@ -64,6 +80,11 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .advantages__item-contrast {
@@ -93,6 +114,10 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+  }
 }
 
 .advantages__header-plus {
@@ -101,6 +126,10 @@
 
 .advantages__description-plus {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .advantages__icon-home {
@@ -111,6 +140,14 @@
   background-repeat: no-repeat;
   min-height: 40px;
   min-width: 40px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    text-align: center;
+    padding-bottom: 26px;
+    min-height: 77px;
+    min-width: 77px;
+  }
 }
 
 .advantages__icon-food {
@@ -121,6 +158,14 @@
   background-repeat: no-repeat;
   min-height: 40px;
   min-width: 40px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    text-align: center;
+    padding-bottom: 26px;
+    min-height: 77px;
+    min-width: 77px;
+  }
 }
 
 .advantages__icon-gift {
@@ -131,6 +176,14 @@
   background-repeat: no-repeat;
   min-height: 40px;
   min-width: 40px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    text-align: center;
+    padding-bottom: 26px;
+    min-height: 77px;
+    min-width: 77px;
+  }
 }
 
 
