@@ -2,8 +2,11 @@
   position: relative;
   width: 320px;
   min-height: 55px;
-  z-index: 3;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .main-nav__list {
@@ -13,28 +16,22 @@
 }
 
 .site-list {
-  // display: none;
-
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: $tablet-width;
-    padding-left: 30px;
-    padding-right: 30px;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
     width: $desktop-width;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
 .site-list__link--space {
   @media (min-width: $tablet-width) {
-    padding-right: 165px;
+    padding-right: 144px;
     padding-left: 35px;
   }
 }
@@ -53,24 +50,32 @@
   background-color: $primary;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+  }
+
+  &:hover,
+  &:active {
+    color: $current;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 20;
   display: block;
   width: 63px;
-  height: 50px;
+  height: 52px;
   background-color: #ffffff;
   cursor: pointer;
   border: none;
-
-  &:hover,
-  &:active {
-    background-color: $primary;
-  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -81,7 +86,7 @@
   content: "";
   position: absolute;
   top: 16px;
-  right: 20px;
+  right: 16px;
   width: 23px;
   height: 4px;
   background-color: $primary;
@@ -106,10 +111,15 @@
 //   }
 
 .main-nav--closed .site-list__item--active a {
-  padding-right: 70px;
-  padding-left: 70px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $current;
+  }
 }
+
 
 .main-nav--opened .main-nav__wrapper {
   position: absolute;
@@ -141,6 +151,7 @@
   top: 0;
   left: auto;
   right: 0;
+  background-color: $primary;
 
   &::before,
   &::after {
