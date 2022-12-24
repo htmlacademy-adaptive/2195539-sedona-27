@@ -26,16 +26,12 @@
   font-size: 18px;
   line-height: 26px;
   padding: 16px;
-}
 
-@media (min-width: $tablet-width) {
-  .field {
+  @media (min-width: $tablet-width) {
     width: $tablet-width;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .field {
+  @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
 }

@@ -4,19 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-@media (min-width: $tablet-width) {
-  .catalog-video__wraper {
+  @media (min-width: $tablet-width) {
     min-height: 700px;
     width: 760px;
+    margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .catalog-video__wraper {
+  @media (min-width: $desktop-width) {
     min-height: 700px;
     width: 800px;
+    margin: 0 auto;
   }
 }
 

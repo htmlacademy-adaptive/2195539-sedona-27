@@ -4,8 +4,8 @@
   padding-bottom: 24px;
 }
 
-@media (min-width: $tablet-width) {
-  .form {
+.form {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -14,12 +14,8 @@
     width: $tablet-width;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form {
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: $desktop-width) {
     padding-left: 70px;
     padding-right: 60px;
     gap: 20px;
@@ -66,7 +62,7 @@
   justify-content: flex-end;
 }
 
-.form__name:nth-last-child(n+3) {
+.form__name--bottom-border {
   padding-bottom: 39px;
   border-bottom: 1px solid #d6d6d6;
 }
@@ -152,23 +148,15 @@
   content: "";
 }
 
-@media (min-width: $tablet-width) {
-  .form__item-feedback {
+.form__item-feedback {
+  @media (min-width: $tablet-width) {
     display: flex;
     width: 256px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__item-feedback {
-    display: flex;
-    width: 256px;
-  }
-}
-
-
-@media (min-width: $tablet-width) {
-  .form__list-feedback {
+.form__list-feedback {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -176,14 +164,8 @@
     height: 120px;
     width: 430px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__list-feedback {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
+  @media (min-width: $desktop-width) {
     height: 100px;
   }
 }
@@ -194,17 +176,8 @@
   width: 100%;
   min-height: 58px;
   margin-top: 56px;
-}
 
-
-@media (min-width: $tablet-width) {
-  .form__feedback-button {
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__feedback-button {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -219,17 +192,9 @@
   text-transform: uppercase;
 }
 
-
-@media (min-width: $tablet-width) {
-  .form__name-wrapper {
+.form__name-wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-self: space-between;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__name-wrapper {
-    display: flex;
-    justify-content: space-between;
   }
 }
