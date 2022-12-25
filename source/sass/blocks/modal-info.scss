@@ -18,6 +18,11 @@
   background-color: #ffffff;
   width: $width;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding: 0;
+  }
 }
 
 .modal-info__header {
@@ -27,6 +32,14 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal-info__description {
@@ -37,6 +50,15 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    padding-left: 99px;
+    padding-right: 99px;
+    padding-bottom: 57px;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .modal-info__title {
@@ -51,9 +73,25 @@
   background-color: $primary;
   width: 180px;
   min-height: 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
+}
+
+.modal-info__button-wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    width: 640px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 // Modal_ON/OFF
-.modal-info--close {
-  display: none;
-}
+// .modal-info--close {
+//   display: none;
+// }
