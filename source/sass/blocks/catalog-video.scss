@@ -6,6 +6,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
     min-height: 700px;
     width: 760px;
     margin: 0 auto;
@@ -23,6 +24,11 @@
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 38px;
+  }
 }
 
 .catalog-video__info {
@@ -37,6 +43,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .catalog-video__description {
@@ -46,6 +57,14 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 70px;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .catalog-video__icon {
@@ -56,4 +75,8 @@
   min-width: 48px;
   background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 350px;
+  }
 }
