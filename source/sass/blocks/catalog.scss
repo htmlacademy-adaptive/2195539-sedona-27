@@ -37,22 +37,26 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding: 0;
+    min-height: 347px;
     width: 50%;
   }
 
   @media (min-width: $desktop-width) {
     width: 33.3%;
     padding: 0;
+    height: 267px;
   }
 }
 
 .catalog__item-first {
   @media (min-width: $tablet-width) {
     width: 768px;
+    min-height: 480px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    min-height: 400px;
   }
 }
 
@@ -115,6 +119,7 @@
 }
 
 .catalog__image {
+  display: block;
   width: 100%;
 }
 
