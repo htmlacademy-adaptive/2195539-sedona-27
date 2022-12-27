@@ -8,12 +8,11 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     min-height: 648px;
-    width: 760px;
+    min-width: 760px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 685px;
     width: 800px;
     margin: 0 auto;
   }
@@ -84,6 +83,6 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    top: 350px;
+    top: 455px;
   }
 }
