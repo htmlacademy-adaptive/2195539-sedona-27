@@ -56,13 +56,12 @@
 
 .advantages__info {
   padding-top: 17px;
-  padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
-    padding-bottom: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,12 +139,15 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    object-fit: unset;
+    height: 256px;
   }
 }
 
 .advantages__icon-home {
   position: absolute;
   left: -49px;
+  top: -9px;
   display: block;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
@@ -166,6 +168,7 @@
 .advantages__icon-food {
   position: absolute;
   left: -49px;
+  top: -9px;
   display: block;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
@@ -186,6 +189,7 @@
 .advantages__icon-gift {
   position: absolute;
   left: -49px;
+  top: -9px;
   display: block;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
