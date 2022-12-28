@@ -23,6 +23,7 @@
     width: $tablet-width;
     align-self: center;
     flex-grow: 1;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
