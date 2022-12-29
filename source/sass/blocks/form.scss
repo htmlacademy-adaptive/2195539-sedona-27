@@ -1,30 +1,51 @@
 .form__legend {
   margin: 0;
   padding-top: 24px;
-  padding-bottom: 24px;
-}
 
-@media (min-width: $tablet-width) {
-  .form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-    width: $tablet-width;
-    margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form {
+.feedback__info {
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.form {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 70px;
-    padding-right: 60px;
-    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: $tablet-width;
     margin: 0 auto;
-    width: 1050px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    width: 1100px;
+  }
+}
+
+.feedback__header {
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.feedback__description {
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -41,6 +62,32 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+}
+
+.form__name--bottom-border {
+  border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.form__name--right-border {
+  @media (min-width: $tablet-width) {
+    border-right: 1px solid #d6d6d6;
+  }
 }
 
 .form__phone-icon {
@@ -66,11 +113,6 @@
   justify-content: flex-end;
 }
 
-.form__name--bottom-border {
-  padding-bottom: 39px;
-  border-bottom: 1px solid #d6d6d6;
-}
-
 .form__list {
   padding-left: 0;
   margin: 0;
@@ -93,6 +135,9 @@
   padding-left: 16px;
 }
 
+.form__label--space {
+  padding-top: 16px;
+}
 
 .form__label-check {
   position: relative;
@@ -117,7 +162,7 @@
 .form__item-mark {
   position: absolute;
   top: 2px;
-  left: -1px;
+  left: 0;
   width: 46px;
   height: 46px;
   border-radius: 4px;
@@ -152,39 +197,33 @@
   content: "";
 }
 
-@media (min-width: $tablet-width) {
-  .form__item-feedback {
+.form__item-feedback {
+  @media (min-width: $tablet-width) {
     display: flex;
-    width: 256px;
+    width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 250px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__item-feedback {
-    display: flex;
-    width: 256px;
-  }
-}
-
-
-@media (min-width: $tablet-width) {
-  .form__list-feedback {
+.form__list-feedback {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 10px;
+    column-gap: 35px;
     height: 120px;
-    width: 430px;
+    width: 648px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__list-feedback {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-    height: 100px;
+  @media (min-width: $desktop-width) {
+    column-gap: 20px;
+    width: 960px;
+    height: 90px;
   }
 }
 
@@ -194,17 +233,8 @@
   width: 100%;
   min-height: 58px;
   margin-top: 56px;
-}
 
-
-@media (min-width: $tablet-width) {
-  .form__feedback-button {
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__feedback-button {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -217,19 +247,23 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-}
 
-
-@media (min-width: $tablet-width) {
-  .form__name-wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
-    justify-self: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 384px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__name-wrapper {
+.form__name-wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
+    column-gap: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
+    column-gap: 221px;
   }
 }

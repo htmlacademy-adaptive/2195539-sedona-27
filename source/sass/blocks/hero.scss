@@ -12,10 +12,8 @@
   background-repeat: no-repeat;
   width: 320px;
   margin: 0, auto;
-}
 
-@media (min-width: $tablet-width) {
-  .hero {
+  @media (min-width: $tablet-width) {
     width: $tablet-width;
     display: flex;
     flex-direction: column;
@@ -28,10 +26,8 @@
     background-repeat: no-repeat;
     min-height: 518px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .hero {
+  @media (min-width: $desktop-width) {
     width: $desktop-width;
     display: flex;
     flex-direction: column;

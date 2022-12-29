@@ -8,10 +8,8 @@
 .search__wrapper {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .search__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,15 +17,11 @@
     padding-left: 155px;
     padding-right: 155px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .search__wrapper {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: $desktop-width) {
     min-height: 300px;
-    padding-left: 370px;
-    padding-right: 370px;
+    padding-left: 371px;
+    padding-right: 371px;
   }
 }
 
@@ -38,6 +32,10 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .search__description {
@@ -49,6 +47,11 @@
   text-align: center;
   padding-top: 38px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .search__button {

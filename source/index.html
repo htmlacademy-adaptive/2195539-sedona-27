@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo site-list__link " href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle main-nav__toggle--open button" type="button"><span class="visually-hidden">Открыть
           меню.</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item ">
-            <a class="site-list__link site-list__link--space" href="catalog.html">Фото и видео</a>
+          <li class="site-list__item site-list__link--space">
+            <a class="site-list__link " href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
@@ -48,10 +50,10 @@
       <div class="advantages__wrapper">
         <div class="advantages__intro-wrapper">
           <div class="advantages__title">
-            <h3 class="advantages__header">Седона — небольшой <br>городок в АРИЗОНЕ, <br> заслуживающий большего!</h3>
+            <h3 class="advantages__header">Седона — небольшой городок в АРИЗОНЕ, <br> заслуживающий большего!</h3>
           </div>
           <div class="advantages__info">
-            <p class="advantages__description">Рассмотрим 5 причин, по которым <br> Седона круче, чем гранд каньон!</p>
+            <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
         </div>
         <ul class="advantages__list">
@@ -65,7 +67,7 @@
               <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             </div>
-            <a class="advantages__link" href="#"><img class="advantages__image" src="img/photo-city.png" width="320"
+            <a class="advantages__link" href="#"><img class="advantages__image" src="img/photo-city-mobile.png" width="320"
                 height="256" alt="Красивые дома.">
             </a>
           </li>
@@ -78,7 +80,7 @@
             </div>
             <div class="advantages__info">
               <p class="advantages__description advantages__description-plus">Рекомендуем пожить в <br> настоящем
-                мотеле, все как в <br> кино!</p>
+                мотеле, все как в кино!</p>
             </div>
           </div>
           </li>
@@ -88,7 +90,7 @@
               <h3 class="advantages__header advantages__header-plus"><span class="advantages__icon-food"></span>Еда</h3>
             </div>
             <div class="advantages__info">
-              <p class="advantages__description advantages__description-plus">Всегда заказывайте фирменный бургер, вы не
+              <p class="advantages__description advantages__description-plus">Всегда заказывайте фирменный бургер, <br> вы не
                 разочаруетесь!</p>
             </div>
           </div>
@@ -116,11 +118,10 @@
             </div>
           </div>
             <a class="advantages__link" href="#">
-              <img class="advantages__image" src="img/photo-bridge.png" width="320" height="260" alt="Красивые горы.">
+              <img class="advantages__image" src="img/photo-bridge-mobile.png" width="320" height="260" alt="Красивые горы.">
             </a>
-
           </li>
-          <li class="advantages__item advantages__additional">
+          <li class="advantages__item advantages__additional advantages__additional--line">
             <div class="advantages__item-wrapper">
             <div class="advantages__title">
               <h3 class="advantages__header">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
@@ -131,7 +132,7 @@
             </div>
           </div>
           </li>
-          <li class="advantages__item advantages__additional">
+          <li class="advantages__item advantages__additional advantages__additional--line">
             <div class="advantages__item-wrapper">
             <div class="advantages__title">
               <h3 class="advantages__header">КРАСИВАЯ ДОРОГА</h3>
@@ -233,5 +234,6 @@
       </div>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>
