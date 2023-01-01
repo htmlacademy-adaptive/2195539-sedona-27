@@ -67,8 +67,13 @@
               <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             </div>
-            <a class="advantages__link" href="#"><img class="advantages__image" src="img/photo-city.png" width="320"
-                height="256" alt="Красивые дома.">
+            <a class="advantages__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/index/photo-city-desktop@1x.jpg 1x, ../img/index/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/index/photo-city-tablet@1x.jpg 1x, ../img/index/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="../img/index/photo-city-mobile@1x.jpg" srcset="../img/index/photo-city-mobile@1x.jpg 1x, ../img/index/photo-city-mobile@2x.jpg 2x"
+              width="320"height="256" alt="Красивые дома.">
+            </picture>
             </a>
           </li>
           <li class="advantages__item advantages__item--left">
@@ -107,7 +112,15 @@
             </div>
           </div>
           </li>
-          <li class="advantages__item advantages__item-contrast">
+          <li class="advantages__item advantages__item-contrast advantages__item--reverse">
+            <a class="advantages__link" href="#">
+              <picture>
+              <source media="(min-width: 1200px)" srcset="../img/index/photo-bridge-desktop@1x.jpg 1x, ../img/index/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../img/index/photo-bridge-tablet@1x.jpg, ../img/index/photo-bridge-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="../img/index/photo-bridge-modile@1x.jpg" srcset="../img/index/photo-bridge-modile@1x.jpg 1x, ../img/index/photo-bridge-mobile@2x.jpg 2x"
+              width="320" height="260" alt="Красивые горы.">
+            </picture>
+            </a>
             <div class="advantages__item-wrapper">
             <div class="advantages__title">
               <h3 class="advantages__header">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
@@ -117,9 +130,7 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
           </div>
-            <a class="advantages__link" href="#">
-              <img class="advantages__image" src="img/photo-bridge.png" width="320" height="260" alt="Красивые горы.">
-            </a>
+
           </li>
           <li class="advantages__item advantages__additional advantages__additional--line">
             <div class="advantages__item-wrapper">
