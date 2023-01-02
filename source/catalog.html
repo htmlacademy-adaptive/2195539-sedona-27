@@ -55,15 +55,19 @@
         </div>
         <div class="catalog__main-info">
           <p class="catalog__description-intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-            забыть о
-            политике и экономике.</p>
+            забыть о политике и экономике.</p>
         </div>
       </div>
       <div class="catalog__wrapper">
         <ul class="catalog__list">
           <li class="catalog__item catalog__item-first">
             <a class="catalog__link" href="#">
-              <img class="catalog__image catalog__image-first" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога на закате.">
+             <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop@1x.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet@1x.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+              <img class="catalog__image catalog__image-first" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile.jpg 1x, img/catalog/photo-1-mobile@2x.jpg 2x"
+              width="280" height="280" alt="Дорога на закате.">
+            </picture>
             </a>
             <div class="catalog__table">
               <div class="catalog__title">
@@ -80,7 +84,12 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактусы.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop@1x.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet@1x.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile.jpg 1x, img/catalog/photo-2-mobile@2x.jpg 2x"
+              width="280" height="280" alt="Кактусы.">
+            </picture>
             </a>
             <div class="catalog__table">
               <div class="catalog__title">
@@ -97,7 +106,12 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Серпантин.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop@1x.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet@1x.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile.jpg 1x, img/catalog/photo-3-mobile@2x.jpg 2x"
+              width="280" height="280" alt="Серпантин.">
+            </picture>
             </a>
             <div class="catalog__table catalog__table--active">
               <div class="catalog__title">
@@ -114,7 +128,12 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="img/photo-4-desktop.jpg" width="280" height="280" alt="Горы.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop@1x.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet@1x.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile.jpg 1x, img/catalog/photo-4-mobile@2x.jpg 2x"
+              width="280" height="280" alt="Горы.">
+             </picture>
             </a>
             <div class="catalog__table">
               <div class="catalog__title">
@@ -145,8 +164,13 @@
         </div>
         <span class="catalog-video__icon"></span>
         <a class="catalog-video__link" href="#">
-          <img class="catalog-video__image" src="img/video-mobile.jpg" width="100%" height="100%"
-            alt="Дорога, серпантин, горы.">
+          <a class="catalog__link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop@1x.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/video-table@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+              <img class="catalog-video__image" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile.jpg 1x, img/catalog/video-mobile@2x.jpg 2x"
+              width="100%" height="100%" alt="Дорога, серпантин, горы.">
+            </picture>
         </a>
       </div>
     </section>
