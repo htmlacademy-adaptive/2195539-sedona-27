@@ -8,7 +8,7 @@
   background-image: url("../img/intro-triangle.svg"),
     url("../img/index/back-mobile.jpg");
   background-position: bottom, center;
-  background-size: 100% auto;
+  background-size: 172% auto, 100% auto;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -23,6 +23,7 @@
       url("../img/index/back-tablet-1x.jpg");
     width: $tablet-width;
     min-height: 290px;
+    background-size: 160% auto, 100% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle.svg"),
@@ -36,6 +37,7 @@
       url("../img/index/back-desktop@1x.jpg");
     width: $desktop-width;
     min-height: 301px;
+    background-size: 100% auto;
   }
 
   @media (min-resolution: 2dppx) {

@@ -100,7 +100,9 @@
             </ul>
           </fieldset>
           <fieldset class="form__feedback form__name form__name--bottom-border">
-            <legend class="form__legend">Ваше общее впечатление:</legend>
+            <div class="form__container">
+              <legend class="form__legend form__legend--line">Ваше общее впечатление:</legend>
+            </div>
             <ul class="form__list form__list-feedback">
               <li class="form__item form__item-feedback">
                 <label class="form__label form__label-check" for="user_plus">
@@ -126,7 +128,9 @@
             </ul>
           </fieldset>
           <fieldset class="form__landmark form__name form__name--bottom-border">
-            <legend class="form__legend">Посещенные достопримечательности:</legend>
+            <div class="form__container">
+            <legend class="form__legend form__legend--line">Посещенные <br> достопримечательности:</legend>
+          </div>
             <ul class="form__list form__list-feedback">
               <li class="form__item form__item-feedback">
                 <label class="form__label form__label-check" for="user_bridge">
@@ -159,13 +163,15 @@
             </ul>
           </fieldset>
           <fieldset class="form__landmark form__name">
-            <legend class="form__legend">Опишите свои эмоции:</legend>
+            <div class="form__container">
+            <legend class="form__legend form__legend--line">Опишите свои эмоции:</legend>
             <label class="form__label" for="feeling">
               <textarea class="form__input field" name="emotions" id="feeling"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
+            </div>
           </fieldset>
-          <fieldset class="form__name ">
+          <fieldset class="form__name">
             <div class="form__name-wrapper">
               <button class="form__feedback-button button">ОТПРАВИТЬ ОТЗЫВ</button>
               <span class="form__note">* — обязательные поля</span>
