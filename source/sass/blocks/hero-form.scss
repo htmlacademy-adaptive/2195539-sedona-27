@@ -22,9 +22,11 @@
     background-image: url("../img/intro-triangle.svg"),
       url("../img/index/back-tablet-1x.jpg");
     width: $tablet-width;
+    min-height: 290px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/back-tablet@2x.jpg");
+      background-image: url("../img/intro-triangle.svg"),
+        url("../img/index/back-tablet@2x.jpg");
       background-size: 768px auto;
     }
   }
@@ -33,10 +35,12 @@
     background-image: url("../img/intro-triangle.svg"),
       url("../img/index/back-desktop@1x.jpg");
     width: $desktop-width;
+    min-height: 301px;
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index/back-tablet@2x.jpg");
+    background-image: url("../img/intro-triangle.svg"),
+      url("../img/index/back-desktop@2x.jpg");
     background-size: 1200px auto;
   }
 }
