@@ -12,10 +12,14 @@
   list-style: none;
 }
 
-// .advantages__item--reverse {
-//   display: flex;
-//   flex-direction: column-reverse;
-// }
+.advantages__item--reverse {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
 
 .advantages__item--left {
   padding-left: 60px;
