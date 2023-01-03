@@ -45,8 +45,12 @@
   background-image: url("../img/intro-triangle.svg");
   background-position: bottom;
   background-color: #ffffff;
-  background-size: 100% auto;
+  background-size: 172% auto;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .advantages__item-wrapper {
@@ -83,7 +87,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,6 +138,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
     padding-top: 23px;
@@ -228,7 +233,6 @@
     min-width: 77px;
   }
 }
-
 
 .advantages__additional {
   background-color: #eeeeee;

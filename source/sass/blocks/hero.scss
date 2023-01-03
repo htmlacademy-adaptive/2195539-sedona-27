@@ -8,7 +8,7 @@
   background-image: url("../img/intro-triangle.svg"),
     url("../img/index/back-mobile.jpg");
   background-position: bottom, top;
-  background-size: 100% auto;
+  background-size: 172% auto, 100% auto;
   background-repeat: no-repeat;
   width: 320px;
   margin: 0, auto;
@@ -28,7 +28,7 @@
     background-image: url("../img/intro-triangle.svg"),
       url("../img/index/back-tablet-1x.jpg");
     background-position: bottom, top;
-    background-size: 100% auto;
+    background-size: 160% auto, 100% auto;
     background-repeat: no-repeat;
     min-height: 518px;
 
@@ -63,4 +63,9 @@
 .hero__image {
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }

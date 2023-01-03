@@ -59,14 +59,12 @@
 .catalog__rate-wrapper {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
   gap: 16px;
-  padding-top: 16px;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
-    align-items: center;
-    padding: 0;
   }
 }
 
@@ -156,11 +154,13 @@
 }
 
 .catalog__icon {
-  min-height: 25px;
-  min-width: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/like-icon.svg");
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+    opacity: 0.9;
+  }
 }
 
 .catalog__rate {
