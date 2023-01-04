@@ -44,16 +44,17 @@ return gulp.src('source/js/script.js')
 
 // Images
 
-const optimizeImages = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
-.pipe(squoosh())
-.pipe(gulp.dest('build/img'))
-}
-
 const copyImages = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
-.pipe(gulp.dest('build/img'))
-}
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(gulp.dest('build/img'))
+  }
+
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
+  }
+
 
 // WebP
 
@@ -72,6 +73,8 @@ gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
+// SPRITE
+
 const sprite = () => {
 return gulp.src('source/img/icons/*.svg')
 .pipe(svgo())
@@ -88,6 +91,7 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
+'source/*.webmanifest'
 ], {
 base: 'source'
 })
