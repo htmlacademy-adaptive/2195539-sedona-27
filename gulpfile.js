@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -33,6 +34,13 @@ const html = () => {
 return gulp.src('source/*.html')
 .pipe(gulp.dest('build'));
 }
+
+export const htmlminify = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+};
+
 
 // Scripts
 
@@ -142,7 +150,7 @@ copy,
 optimizeImages,
 gulp.parallel(
 styles,
-html,
+htmlminify,
 scripts,
 svg,
 sprite,
