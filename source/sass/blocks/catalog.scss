@@ -157,6 +157,11 @@
   fill: #000000;
   opacity: 0.3;
 
+  @media (min-width: $tablet-width) {
+    fill: #000000;
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-width) {
     fill: #ffffff;
     opacity: 0.9;
