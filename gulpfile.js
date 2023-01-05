@@ -45,9 +45,15 @@ export const htmlminify = () => {
 // Scripts
 
 const scripts = () => {
-return gulp.src('source/js/script.js')
+return gulp.src('source/js/*.js')
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
+}
+
+export const scriptsmimify = () => {
+return gulp.src('source/js/*.js')
+.pipe(terser())
+.pipe(gulp.dest('build/js'))
 }
 
 // Images
@@ -151,7 +157,7 @@ optimizeImages,
 gulp.parallel(
 styles,
 htmlminify,
-scripts,
+scriptsmimify,
 svg,
 sprite,
 createWebp
