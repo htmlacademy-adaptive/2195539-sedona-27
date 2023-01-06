@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма Отзыва</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -44,7 +45,7 @@
           <a class="hero-form__link" href="#">
             <svg class="hero-form__image" width="229" height="39" viewBox="0 0 229 39" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <use href="../img/sprite.svg#sedona" />
+              <use href="img/sprite.svg#sedona" />
             </svg>
           </a>
         </header>
@@ -129,8 +130,8 @@
           </fieldset>
           <fieldset class="form__landmark form__name form__name--bottom-border">
             <div class="form__container">
-            <legend class="form__legend form__legend--line">Посещенные <br> достопримечательности:</legend>
-          </div>
+              <legend class="form__legend form__legend--line">Посещенные <br> достопримечательности:</legend>
+            </div>
             <ul class="form__list form__list-feedback">
               <li class="form__item form__item-feedback">
                 <label class="form__label form__label-check" for="user_bridge">
@@ -164,11 +165,11 @@
           </fieldset>
           <fieldset class="form__landmark form__name">
             <div class="form__container">
-            <legend class="form__legend form__legend--line">Опишите свои эмоции:</legend>
-            <label class="form__label" for="feeling">
-              <textarea class="form__input field" name="emotions" id="feeling"
-                placeholder="Опишите подробно все свои восторги"></textarea>
-            </label>
+              <legend class="form__legend form__legend--line">Опишите свои эмоции:</legend>
+              <label class="form__label" for="feeling">
+                <textarea class="form__input field" name="emotions" id="feeling"
+                  placeholder="Опишите подробно все свои восторги"></textarea>
+              </label>
             </div>
           </fieldset>
           <fieldset class="form__name">
@@ -191,7 +192,7 @@
             <span class="visually-hidden">Vkontakte.</span>
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="../img/sprite.svg#icon-vkontakte" />
+                <use href="img/sprite.svg#icon-vkontakte" />
               </svg>
             </a>
           </li>
@@ -199,7 +200,7 @@
             <span class="visually-hidden">Telegram.</span>
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="../img/sprite.svg#icon-telegram" />
+                <use href="img/sprite.svg#icon-telegram" />
               </svg>
             </a>
           </li>
@@ -207,7 +208,7 @@
             <span class="visually-hidden">Youtube.</span>
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="../img/sprite.svg#icon-youtube" />
+                <use href="img/sprite.svg#icon-youtube" />
               </svg>
             </a>
           </li>
@@ -217,7 +218,7 @@
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
-            <use href="../img/sprite.svg#icon-htmlacademy" />
+            <use href="img/sprite.svg#icon-htmlacademy" />
           </svg>
         </a>
       </div>
@@ -251,5 +252,4 @@
     </div>
   </div>
 </body>
-
 </html>

@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -41,8 +43,9 @@
       <div class="hero__wrapper">
         <header class="hero__header">
           <a class="hero__link" href="#">
-            <svg class="hero__image" width="282" height="214" viewBox="0 0 282 214" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="../img/sprite.svg#intro-text" />
+            <svg class="hero__image" width="282" height="214" viewBox="0 0 282 214" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#intro-text" />
             </svg>
           </a>
         </header>
@@ -72,13 +75,19 @@
             </div>
             <a class="advantages__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/index/photo-city-desktop@1x.webp 1x, img/index/photo-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/index/photo-city-tablet@1x.webp 1x, img/index/photo-city-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/index/photo-city-mobile@1x.webp 1x, img/index/photo-city-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="img/index/photo-city-desktop@1x.jpg 1x, ../img/index/photo-city-desktop@2x.jpg 2x">
+                  srcset="img/index/photo-city-desktop@1x.jpg 1x, img/index/photo-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/index/photo-city-tablet@1x.jpg 1x, ../img/index/photo-city-tablet@2x.jpg 2x">
+                  srcset="img/index/photo-city-tablet@1x.jpg 1x, img/index/photo-city-tablet@2x.jpg 2x">
                 <img class="advantages__image" src="img/index/photo-city-mobile@1x.jpg"
-                  srcset="../img/index/photo-city-mobile@1x.jpg 1x, ../img/index/photo-city-mobile@2x.jpg 2x"
-                  width="320" height="256" alt="Красивые дома.">
+                  srcset="img/index/photo-city-mobile@1x.jpg 1x, img/index/photo-city-mobile@2x.jpg 2x" width="320"
+                  height="256" alt="Красивые дома.">
               </picture>
             </a>
           </li>
@@ -104,7 +113,8 @@
               <div class="advantages__info">
                 <p class="advantages__description advantages__description-plus">Всегда заказывайте фирменный бургер,
                   <br> вы не
-                  разочаруетесь!</p>
+                  разочаруетесь!
+                </p>
               </div>
             </div>
           </li>
@@ -123,13 +133,19 @@
           <li class="advantages__item advantages__item-contrast advantages__item--reverse">
             <a class="advantages__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/index/photo-bridge-desktop@1x.webp 1x, img/index/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/index/photo-bridge-tablet@1x.webp, img/index/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/index/photo-bridge-modile@1x.webp 1x, img/index/photo-bridge-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="img/index/photo-bridge-desktop@1x.jpg 1x, ../img/index/photo-bridge-desktop@2x.jpg 2x">
+                  srcset="img/index/photo-bridge-desktop@1x.jpg 1x, img/index/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/index/photo-bridge-tablet@1x.jpg, ../img/index/photo-bridge-tablet@2x.jpg 2x">
+                  srcset="img/index/photo-bridge-tablet@1x.jpg, img/index/photo-bridge-tablet@2x.jpg 2x">
                 <img class="advantages__image" src="img/index/photo-bridge-modile@1x.jpg"
-                  srcset="../img/index/photo-bridge-modile@1x.jpg 1x, ../img/index/photo-bridge-mobile@2x.jpg 2x"
-                  width="320" height="260" alt="Красивые горы.">
+                  srcset="img/index/photo-bridge-modile@1x.jpg 1x, img/index/photo-bridge-mobile@2x.jpg 2x" width="320"
+                  height="260" alt="Красивые горы.">
               </picture>
             </a>
             <div class="advantages__item-wrapper">
@@ -209,7 +225,7 @@
             <span class="visually-hidden">Vkontakte.</span>
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="../img/sprite.svg#icon-vkontakte" />
+                <use href="img/sprite.svg#icon-vkontakte" />
               </svg>
             </a>
           </li>
@@ -217,7 +233,7 @@
             <span class="visually-hidden">Telegram.</span>
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="../img/sprite.svg#icon-telegram" />
+                <use href="img/sprite.svg#icon-telegram" />
               </svg>
             </a>
           </li>
@@ -225,7 +241,7 @@
             <span class="visually-hidden">Youtube.</span>
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="../img/sprite.svg#icon-youtube" />
+                <use href="img/sprite.svg#icon-youtube" />
               </svg>
             </a>
           </li>
@@ -235,7 +251,7 @@
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
-            <use href="../img/sprite.svg#icon-htmlacademy" />
+            <use href="img/sprite.svg#icon-htmlacademy" />
           </svg>
         </a>
       </div>
