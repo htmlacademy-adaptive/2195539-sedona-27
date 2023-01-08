@@ -12,12 +12,29 @@
   @media (min-width: $desktop-width) {
     min-width: 400px;
   }
+
+  &:hover {
+    background-color: $secondary_hover;
+  }
+
+  &:active {
+    background-color: $secondary_active;
+  }
+
+  &:disabled {
+    background-color: $secondary_hover;
+    color: #ffffff;
+  }
+}
+
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .input__contact {
   min-height: 58px;
   min-width: 222px;
-  color: rgba($color: #000000, $alpha: 0.3);
+  color: #000000;
 
   @media (min-width: $desktop-width) {
     min-width: 344px;

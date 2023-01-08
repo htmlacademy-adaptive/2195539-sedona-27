@@ -156,6 +156,7 @@
 .catalog__icon {
   fill: #000000;
   opacity: 0.3;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     fill: #000000;

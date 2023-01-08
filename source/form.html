@@ -21,13 +21,13 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item ">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__link--space">
             <a class="site-list__link " href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
@@ -67,15 +67,15 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label form__label--space" for="user-first">ИМЯ*:</label>
-                <input class="form__input input" type="text" name="name" required id="user-first" value="Пётр">
+                <input class="form__input input" type="text" name="name" required id="user-first" value="Пётр" placeholder="Имя">
               </li>
               <li class="form__item">
                 <label class="form__label form__label--space" for="user-second">ФАМИЛИЯ*:</label>
-                <input class="form__input input" type="text" name="surname" required id="user-second" value="Пустота">
+                <input class="form__input input" type="text" name="surname" required id="user-second" value="Пустота" placeholder="Фамилия">
               </li>
               <li class="form__item">
                 <label class="form__label form__label--space" for="user-third">ОТЧЕСТВО:</label>
-                <input class="form__input input" type="text" name="patronymic" id="user-third" value="Викторович">
+                <input class="form__input input" type="text" name="patronymic" id="user-third" value="Викторович"placeholder="Отчество">
               </li>
             </ul>
           </fieldset>
@@ -86,7 +86,7 @@
                 <label class="form__label form__label--space" for="user_phone">Контактный телефон*:</label>
                 <div class="input__wrapper">
                   <input class="form__input input input__contact" type="tel" name="phone" required id="user_phone"
-                    value="Введите телефон">
+                    placeholder="Введите телефон">
                   <span class="form__phone-icon"></span>
                 </div>
               </li>
@@ -94,7 +94,7 @@
                 <label class="form__label form__label--space" for="user_email">Электронная почта*:</label>
                 <div class="input__wrapper">
                   <input class="form__input input input__contact" type="email" name="email" required id="user_email"
-                    value="Введите e-mail">
+                    placeholder="Введите e-mail">
                   <span class="form__email-icon"></span>
                 </div>
               </li>
@@ -166,8 +166,8 @@
           <fieldset class="form__landmark form__name">
             <div class="form__container">
               <legend class="form__legend form__legend--line">Опишите свои эмоции:</legend>
-              <label class="form__label" for="feeling">
-                <textarea class="form__input field" name="emotions" id="feeling"
+              <label class="form__label form__label--center" for="feeling">
+                <textarea class="form__input field input" name="emotions" id="feeling"
                   placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
             </div>
