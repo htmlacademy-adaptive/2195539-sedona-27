@@ -3,13 +3,13 @@
   padding-bottom: 100%;
   position: relative;
   height: 0;
+  min-height: 350px;
 
 
   @media (min-width: $tablet-width) {
     overflow: hidden;
     padding-bottom: 0;
     position: relative;
-    min-height: 350px;
   }
 }
 

@@ -33,15 +33,14 @@
 
 .site-list__link--space {
   @media (min-width: $tablet-width) {
-    padding-right: 144px;
+    padding-right: 100px;
     padding-left: 35px;
   }
 }
 
 .site-list a {
   display: block;
-  padding: 12px 17px;
-  padding-bottom: 13px;
+  padding: 14px 17px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -137,6 +136,11 @@
 
   @media (min-width: $tablet-width) {
     color: $current;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 0;
   }
 }
 
