@@ -77,12 +77,7 @@
 
     &:active {
       background-color: #ffffff;
-      color: $current;
-    }
-
-    &:target {
-      background-color: #ffffff;
-      color: $current;
+      color: rgba(0, 0, 0, 0.3);
     }
   }
 }

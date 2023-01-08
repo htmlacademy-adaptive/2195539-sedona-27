@@ -41,6 +41,14 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    color: #d3d3d3;
+  }
 }
 
 .social__list {
@@ -66,7 +74,17 @@
   justify-content: center;
   background-color: $primary;
   cursor: pointer;
+
+  &:hover {
+    background-color: $primary_hover;
+  }
+
+  &:active {
+    background-color: $primary_active;
+    fill-opacity: 0.3;
+  }
 }
+
 
 .main-footer__copyright {
   margin-top: 38px;
@@ -78,20 +96,31 @@
   }
 }
 
-.copyright__text {
+.logo-html {
+  margin-left: 12px;
+}
+
+.copyright__link {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  fill: #000000;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-}
 
-.copyright__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+
+  &:hover {
+    fill: $primary;
+    color: $primary;
+  }
+
+  &:active {
+    fill: #d3d3d3;
+    color: #d3d3d3;
+  }
 }

@@ -279,12 +279,26 @@
   min-height: 58px;
   margin-top: 56px;
 
+  &:hover {
+    background-color: $primary_hover;
+  }
+
+  &:active {
+    background-color: $primary_active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 115px;
+  }
+
+  &:disabled {
+    background-color: $secondary_hover;
+    color: #ffffff;
   }
 }
 

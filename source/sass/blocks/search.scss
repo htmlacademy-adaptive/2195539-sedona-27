@@ -58,4 +58,18 @@
   background-color: $primary;
   width: 100%;
   min-height: 58px;
+
+  &:hover {
+    background-color: $primary_hover;
+  }
+
+  &:active {
+    background-color: $primary_active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $secondary_hover;
+    color: #ffffff;
+  }
 }
