@@ -15,14 +15,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 155px;
-    padding-right: 155px;
+    padding-left: 136px;
+    padding-right: 136px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 300px;
-    padding-left: 371px;
-    padding-right: 371px;
+    padding-left: 353px;
+    padding-right: 353px;
   }
 }
 
@@ -50,8 +50,9 @@
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 38px;
   }
 }
 
@@ -72,5 +73,10 @@
   &:disabled {
     background-color: $secondary_hover;
     color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
   }
 }
