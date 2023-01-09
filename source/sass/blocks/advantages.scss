@@ -22,7 +22,7 @@
 }
 
 .advantages__item--left {
-  padding-left: 46px;
+  padding-left: 50px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -35,7 +35,6 @@
     width: 100%;
   }
 }
-
 
 .advantages__intro-wrapper {
   display: flex;
@@ -51,7 +50,7 @@
   &::before {
     content: url("../img/rectangle.svg");
     position: absolute;
-    top: -17px;
+    top: -15px;
 
     @media (min-width: $tablet-width) {
       content: none;
@@ -60,8 +59,6 @@
 }
 
 .advantages__item-wrapper {
-  min-height: 139px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -86,20 +83,28 @@
 }
 
 .advantages__title {
-  padding-top: 32px;
+  padding-top: 33px;
   padding-left: 22px;
   padding-right: 26px;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+  }
 }
 
 .advantages__title-contrast {
   padding-top: 54px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 11px;
 }
 
 .advantages__title-plus {
-  padding-left: 22px;
+  padding-top: 33px;
+  padding-left: 15px;
   padding-right: 26px;
+  padding-bottom: 16px;
 }
 
 .advantages__number {
@@ -109,8 +114,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 23px;
@@ -119,7 +123,8 @@
 
 .advantages__info {
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 10px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
@@ -135,11 +140,16 @@
 .advantages__info-contrast {
   padding-left: 18px;
   padding-right: 11px;
-  padding-bottom: 38px;
+  padding-bottom: 35px;
 }
 
 .advantages__info-plus {
-  padding-right: 25px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.advantages__description-plus--bottom {
+  padding-bottom: 44px;
 }
 
 .advantages__header {
@@ -205,8 +215,8 @@
 
 .advantages__icon-home {
   position: absolute;
-  left: -49px;
-  top: -9px;
+  left: -46px;
+  top: -10px;
   display: block;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
@@ -226,8 +236,8 @@
 
 .advantages__icon-food {
   position: absolute;
-  left: -49px;
-  top: -46px;
+  left: -46px;
+  top: -8px;
   display: block;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
@@ -247,8 +257,8 @@
 
 .advantages__icon-gift {
   position: absolute;
-  left: -46px;
-  top: -117px;
+  left: -42px;
+  top: -7px;
   display: block;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;

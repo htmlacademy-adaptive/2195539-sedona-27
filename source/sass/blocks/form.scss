@@ -199,7 +199,18 @@
   line-height: 26px;
   padding-bottom: 16px;
   text-transform: capitalize;
+
+  &:hover .form__item-mark {
+    border: 2px solid $secondary_hover;
+    background-color: $secondary_hover;
+  }
+
+  &:active .form__item-mark {
+    border: 2px solid $secondary_active;
+    background-color: $secondary_active;
+  }
 }
+
 
 // check-box
 .form__input {
@@ -217,14 +228,6 @@
   border-radius: 4px;
   background-color: $secondary;
   border: 2px solid $secondary;
-
-  &:hover {
-    background-color: $secondary_hover;
-  }
-
-  &:active {
-    background-color: $secondary_active;
-  }
 }
 
 .form__input[type="checkbox"]:checked + .form__item-mark::before,
