@@ -318,7 +318,17 @@
 }
 
 .breaker {
+  display: block;
+
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.breaker--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
