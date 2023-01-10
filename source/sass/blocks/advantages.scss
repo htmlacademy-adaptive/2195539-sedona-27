@@ -8,6 +8,12 @@
   }
 }
 
+.advantages__link {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .advantages__item {
   list-style: none;
 }
@@ -21,30 +27,7 @@
   }
 }
 
-.advantages__item--left {
-  padding-left: 50px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-    width: 33.33%;
-  }
-}
-
-.advantages__link {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-}
-
-.advantages__intro-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-}
-
-.advantages__item-triangle {
+.advantages__item--triangle {
   position: relative;
 
   &::before {
@@ -58,20 +41,32 @@
   }
 }
 
+.advantages__title--intro {
+  padding-bottom: 35px;
+}
+
+.advantages__title--contrast {
+  padding-top: 26px;
+  padding-bottom: 11px;
+}
+
+.advantages__title--contrast2 {
+  padding-top: 5px;
+  padding-bottom: 17px;
+}
+
 .advantages__item-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 18px;
+  padding-right: 18px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 256px;
-    width: 256px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-
-  @media (min-width: $tablet-width) {
     width: 256px;
     flex: 0 0 256px;
   }
@@ -82,51 +77,6 @@
   }
 }
 
-.advantages__title {
-  padding-top: 33px;
-  padding-left: 22px;
-  padding-right: 26px;
-  padding-bottom: 34px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 46px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 60px;
-    padding-bottom: 0;
-  }
-}
-
-.advantages__title-contrast {
-  padding-top: 54px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 11px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 68px;
-    padding-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-.advantages__title-plus {
-  padding-top: 33px;
-  padding-left: 15px;
-  padding-right: 26px;
-  padding-bottom: 16px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 56px;
-    padding-bottom: 20px;
-  }
-}
-
 .advantages__number {
   margin: 0;
   font-weight: 400;
@@ -134,43 +84,10 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 20px;
 }
 
-.advantages__info {
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-bottom: 33px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 52px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 10px;
-    padding-top: 28px;
-    padding-bottom: 59px;
-  }
-}
-
-.advantages__info-contrast {
-  padding-left: 18px;
-  padding-right: 11px;
-  padding-bottom: 35px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.advantages__info-plus {
-  padding-left: 11px;
-  padding-right: 11px;
-}
-
-.advantages__description-plus--bottom {
-  padding-bottom: 44px;
+.advantages__number--contrast2 {
+  padding-bottom: 16px;
 }
 
 .advantages__header {
@@ -188,7 +105,7 @@
   }
 }
 
-.advantages__item-contrast {
+.advantages__item--contrast {
   color: #ffffff;
   background-color: $primary;
 
@@ -198,6 +115,34 @@
     width: 100%;
   }
 }
+
+.advantages__number--contrast {
+  padding-bottom: 15px;
+}
+
+.advantages__info--contrast {
+  padding-bottom: 8px;
+}
+
+.advantages__item-wrapper-plus {
+  padding-top: 30px;
+  padding-left: 65px;
+  padding-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 33.33%;
+  }
+}
+
+.advantages__title-plus {
+  padding-bottom: 19px;
+}
+
+.advantages__info-plus {
+  padding-bottom: 44px;
+}
+
 
 .advantages__description {
   margin: 0;
@@ -226,6 +171,21 @@
   }
 }
 
+.advantages__item-wrapper-gray {
+  padding-top: 26px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.advantages__title-gray {
+  padding-bottom: 11px;
+}
+
+.advantages__info-gray {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
 .advantages__image {
   display: block;
 
@@ -238,7 +198,7 @@
 
 .advantages__icon-home {
   position: absolute;
-  left: -46px;
+  left: -50px;
   top: -10px;
   display: block;
   background-image: url("../img/icon-house.svg");

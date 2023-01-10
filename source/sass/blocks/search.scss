@@ -1,14 +1,13 @@
 .search {
-  padding-top: 38px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-bottom: 35px;
   min-height: 287px;
 }
 
 .search__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 41px;
+  padding-left: 18px;
+  padding-right: 18px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -46,8 +45,8 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 38px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
