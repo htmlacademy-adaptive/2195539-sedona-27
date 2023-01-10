@@ -14,8 +14,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 136px;
-    padding-right: 136px;
+    padding-top: 60px;
+    padding-left: 156px;
+    padding-right: 156px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +52,8 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 21px;
-    padding-bottom: 38px;
+    padding-top: 35px;
+    padding-bottom: 39px;
   }
 }
 
