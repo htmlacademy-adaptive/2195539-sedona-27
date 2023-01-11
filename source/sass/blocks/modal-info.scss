@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 45px 41px 45px 41px;
+  padding: 47px 41px 0 41px;
   background-color: #ffffff;
   width: $width;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -50,14 +50,13 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
     padding-left: 99px;
     padding-right: 99px;
-    padding-bottom: 57px;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -71,7 +70,7 @@
 
 .modal-info__button {
   background-color: $primary;
-  width: 180px;
+  width: 280px;
   min-height: 58px;
 
   @media (min-width: $tablet-width) {
@@ -80,6 +79,14 @@
 }
 
 .modal-info__button-wrapper {
+  background-color: #f2f2f2;
+  width: 320px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
     width: 640px;

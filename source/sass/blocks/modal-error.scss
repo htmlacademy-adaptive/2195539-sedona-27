@@ -14,9 +14,10 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 45px 41px 45px 41px;
+  padding: 45px 41px 40px 41px;
   background-color: #ffffff;
   width: $width;
+  min-height: 280px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
   @media (min-width: $tablet-width) {
@@ -36,6 +37,8 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -49,8 +52,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -60,6 +63,10 @@
 
 .modal-error__info {
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
 }
 
 .modal-error__button {
