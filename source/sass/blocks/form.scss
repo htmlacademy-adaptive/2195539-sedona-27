@@ -13,7 +13,9 @@
   padding-right: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 26px;
+    padding-bottom: 0;
+    padding-right: 10px;
+    padding-left: 44px;
   }
 }
 
@@ -22,13 +24,15 @@
   padding-right: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 26px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 24px;
   }
 }
 
 .form__legend--padding3 {
   padding-top: 15px;
-  padding-right: 10px;
+  padding-right: 28px;
   padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
@@ -37,7 +41,7 @@
 }
 
 .form__legend--padding4 {
-  padding-right: 10px;
+  padding-right: 32px;
   padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
@@ -59,10 +63,10 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 30%;
+    left: -33px;
     height: 1px;
-    width: 123px;
+    width: 150px;
     background-color: #d6d6d6;
     z-index: 1;
   }
@@ -82,8 +86,8 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    top: 50%;
-    right: 0;
+    top: 30%;
+    right: -15px;
     height: 1px;
     width: 123px;
     background-color: #d6d6d6;
@@ -149,8 +153,8 @@
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
-    padding-left: 43px;
+    padding-top: 11px;
+    padding-left: 53px;
     padding-right: 43px;
   }
 
@@ -166,9 +170,9 @@
   padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
-    padding-left: 43px;
-    padding-right: 43px;
+    padding-top: 0;
+    padding-left: 29px;
+    padding-right: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,8 +187,8 @@
   padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
-    padding-left: 43px;
+    padding-top: 13px;
+    padding-left: 75px;
     padding-right: 43px;
   }
 
@@ -201,9 +205,9 @@
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
-    padding-left: 43px;
-    padding-right: 43px;
+    padding-top: 22px;
+    padding-left: 75px;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -252,6 +256,10 @@
 .input__wrapper {
   display: flex;
   justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+  }
 }
 
 .form__list {
@@ -285,6 +293,16 @@
 
 .form__label--space {
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 1px;
+  }
+}
+
+.form__label--left {
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
 }
 
 .form__label-check {
@@ -347,6 +365,10 @@
   content: url("../img/tick.svg");
 }
 
+.form__container2 {
+  padding-left: 50px;
+}
+
 // radio
 .form__input[type="radio"] + .form__item-mark {
   border-radius: 50%;
@@ -376,15 +398,26 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    column-gap: 35px;
     height: 132px;
-    width: 648px;
+    width: 596px;
   }
 
   @media (min-width: $desktop-width) {
     column-gap: 20px;
     width: 960px;
     height: 90px;
+  }
+}
+
+.form__item-feedback--order {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.form__item-feedback--order2 {
+  @media (min-width: $tablet-width) {
+    order: 2;
   }
 }
 

@@ -84,7 +84,7 @@
             <legend class="form__legend form__legend--padding2">Контактная информация:</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label form__label--space" for="user_phone">Контактный телефон*:</label>
+                <label class="form__label form__label--space form__label--left" for="user_phone">Контактный телефон*:</label>
                 <div class="input__wrapper">
                   <input class="form__input input input__contact" type="tel" name="phone" required id="user_phone"
                     placeholder="Введите телефон">
@@ -92,7 +92,7 @@
                 </div>
               </li>
               <li class="form__item">
-                <label class="form__label form__label--space" for="user_email">Электронная почта*:</label>
+                <label class="form__label form__label--space form__label--left" for="user_email">Электронная почта*:</label>
                 <div class="input__wrapper">
                   <input class="form__input input input__contact" type="email" name="email" required id="user_email"
                     placeholder="Введите e-mail">
@@ -121,7 +121,7 @@
                 </label>
               </li>
               <li class="form__item form__item-feedback">
-                <label class="form__label form__label-check form__label-check--text" for="user_unknown">
+                <label class="form__label form__label-check form__label-check--text " for="user_unknown">
                   <input class="form__input" type="radio" name="feedback" id="user_unknown">
                   <span class="form__item form__item-mark"></span>
                   <span class="form__item form__item-label">Затрудняюсь ответить</span>
@@ -135,27 +135,31 @@
             </div>
             <ul class="form__list form__list-feedback">
               <li class="form__item form__item-feedback">
+                <div class="form__container2">
                 <label class="form__label form__label-check" for="user_bridge">
                   <input class="form__input" type="checkbox" name="bridge" id="user_bridge" checked>
                   <span class="form__item form__item-mark"></span>
                   <span class="form__item form__item-label">Мост Дьявола</span>
                 </label>
+              </div>
               </li>
-              <li class="form__item form__item-feedback">
+              <li class="form__item form__item-feedback form__item-feedback--order">
                 <label class="form__label form__label-check" for="user_mountain">
                   <input class="form__input" type="checkbox" name="mountain" id="user_mountain" checked>
                   <span class="form__item form__item-mark"></span>
-                  <span class="form__item form__item-label">Гора-Колокол</span>
+                  <span class="form__item form__item-label form__item-label--padding">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item ">
+                <div class="form__container2">
                 <label class="form__label form__label-check form__label-check--padding" for="user_park">
                   <input class="form__input" type="checkbox" name="park" id="user_park" checked>
                   <span class="form__item form__item-mark"></span>
                   <span class="form__item form__item-label">Слайд-парк</span>
                 </label>
+              </div>
               </li>
-              <li class="form__item form__item-feedback">
+              <li class="form__item form__item-feedback form__item-feedback--order2">
                 <label class="form__label form__label-check" for="user_rock">
                   <input class="form__input" type="checkbox" name="rock" id="user_rock">
                   <span class="form__item form__item-mark"></span>
@@ -251,5 +255,6 @@
       </div>
     </div>
   </div>
+  <script src="../js/script.js"></script>
 </body>
 </html>
