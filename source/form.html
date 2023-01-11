@@ -16,21 +16,22 @@
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle main-nav__toggle--open button" type="button"><span class="visually-hidden">Открыть
+      <button class="main-nav__toggle main-nav__toggle--open button" type="button"><span
+          class="visually-hidden">Открыть
           меню.</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item ">
+          <li class="site-list__item  site-list__item--left">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__link--space">
-            <a class="site-list__link " href="catalog.html">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item--active site-list__link--space2">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__link--right">
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
@@ -62,8 +63,8 @@
             вами достопримечательностях</p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__name form__name--bottom-border form__name--right-border ">
-            <legend class="form__legend">Представьтесь:</legend>
+          <fieldset class="form__name form__name--bottom-border form__name--right-border form__name--padding">
+            <legend class="form__legend form__legend--padding">Представьтесь:</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label form__label--space" for="user-first">ИМЯ*:</label>
@@ -79,8 +80,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__contacts form__name form__name--bottom-border">
-            <legend class="form__legend">Контактная информация:</legend>
+          <fieldset class="form__contacts form__name form__name--bottom-border form__name--padding2">
+            <legend class="form__legend form__legend--padding2">Контактная информация:</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label form__label--space" for="user_phone">Контактный телефон*:</label>
@@ -100,27 +101,27 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__feedback form__name form__name--bottom-border">
+          <fieldset class="form__feedback form__name form__name--bottom-border form__name--padding3">
             <div class="form__container">
-              <legend class="form__legend form__legend--line">Ваше общее впечатление:</legend>
+              <legend class="form__legend form__legend--line form__legend--padding3">Ваше общее впечатление:</legend>
             </div>
             <ul class="form__list form__list-feedback">
               <li class="form__item form__item-feedback">
-                <label class="form__label form__label-check" for="user_plus">
+                <label class="form__label form__label-check form__label-check--text" for="user_plus">
                   <input class="form__input" type="radio" name="feedback" id="user_plus" checked>
                   <span class="form__item form__item-mark"></span>
                   <span class="form__item form__item-label">Скорее положительное</span>
                 </label>
               </li>
               <li class="form__item form__item-feedback">
-                <label class="form__label form__label-check" for="user_minus">
+                <label class="form__label form__label-check form__label-check--text" for="user_minus">
                   <input class="form__input" type="radio" name="feedback" id="user_minus">
                   <span class="form__item form__item-mark"></span>
                   <span class="form__item form__item-label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="form__item form__item-feedback">
-                <label class="form__label form__label-check" for="user_unknown">
+                <label class="form__label form__label-check form__label-check--text" for="user_unknown">
                   <input class="form__input" type="radio" name="feedback" id="user_unknown">
                   <span class="form__item form__item-mark"></span>
                   <span class="form__item form__item-label">Затрудняюсь ответить</span>
@@ -128,9 +129,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__landmark form__name form__name--bottom-border">
+          <fieldset class="form__name form__name--bottom-border form__name--padding4">
             <div class="form__container">
-              <legend class="form__legend form__legend--line">Посещенные <br> достопримечательности:</legend>
+              <legend class="form__legend form__legend--line form__legend--padding4">Посещенные <br> достопримечательности:</legend>
             </div>
             <ul class="form__list form__list-feedback">
               <li class="form__item form__item-feedback">
@@ -148,7 +149,7 @@
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label form__label-check" for="user_park">
+                <label class="form__label form__label-check form__label-check--padding" for="user_park">
                   <input class="form__input" type="checkbox" name="park" id="user_park" checked>
                   <span class="form__item form__item-mark"></span>
                   <span class="form__item form__item-label">Слайд-парк</span>
@@ -165,14 +166,14 @@
           </fieldset>
           <fieldset class="form__landmark form__name">
             <div class="form__container">
-              <legend class="form__legend form__legend--line">Опишите свои эмоции:</legend>
+              <legend class="form__legend form__legend--line form__legend--padding5">Опишите свои эмоции:</legend>
               <label class="form__label form__label--center" for="feeling">
                 <textarea class="form__input field input" name="emotions" id="feeling"
                   placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
             </div>
           </fieldset>
-          <fieldset class="form__name">
+          <fieldset class="form__name form__name--button-size">
             <div class="form__name-wrapper">
               <button class="form__feedback-button button">ОТПРАВИТЬ ОТЗЫВ</button>
               <span class="form__note">* — обязательные поля</span>
