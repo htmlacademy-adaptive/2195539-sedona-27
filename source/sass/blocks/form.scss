@@ -9,8 +9,11 @@
 }
 
 .form__legend--padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 25px;
-  padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -20,8 +23,11 @@
 }
 
 .form__legend--padding2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 26px;
-  padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 10px;
@@ -31,9 +37,13 @@
 }
 
 .form__legend--padding3 {
-  padding-top: 15px;
-  padding-right: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18px;
   padding-bottom: 21px;
+  padding-right: 16px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 26px;
@@ -41,21 +51,28 @@
 }
 
 .form__legend--padding4 {
-  padding-right: 32px;
-  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 26px;
+    padding-right: 20px;
   }
 }
 
 .form__legend--padding5 {
-  padding-top: 18px;
-  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 26px;
+    padding-top: 8px;
   }
 }
 
@@ -64,9 +81,9 @@
     content: "";
     position: absolute;
     top: 30%;
-    left: -33px;
+    left: -15px;
     height: 1px;
-    width: 150px;
+    width: 123px;
     background-color: #d6d6d6;
     z-index: 1;
   }
@@ -77,6 +94,10 @@
 }
 
 .form__container {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 1000px;
   }
@@ -87,7 +108,7 @@
     content: "";
     position: absolute;
     top: 30%;
-    right: -15px;
+    right: 0;
     height: 1px;
     width: 123px;
     background-color: #d6d6d6;
@@ -176,8 +197,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 63px;
-    padding-right: 63px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -187,9 +208,12 @@
   padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 13px;
-    padding-left: 75px;
-    padding-right: 43px;
+    padding-left: 50px;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -202,12 +226,56 @@
   padding-top: 23px;
   padding-left: 20px;
   padding-right: 16px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
-    padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 63px;
     padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+}
+
+.form__name--padding5 {
+  padding-top: 19px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+}
+
+.form__name--padding6 {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -231,8 +299,10 @@
 }
 
 .form__name--button-size {
-  padding-right: 20px;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 59px;
 }
 
 .form__phone-icon {
@@ -323,6 +393,15 @@
     background-color: $secondary_hover;
   }
 
+  &:active .form__input[type="radio"]:checked + .form__item-mark::before {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+
+  // &:hover .form__input[type="checkbox"]:checked + .form__item-mark::before,
+  // .form__input[type="checkbox"]:checked + .form__item-mark::after {
+  //     fill: red;
+  // }
+
   &:active .form__item-mark {
     border: 2px solid $secondary_active;
     background-color: $secondary_active;
@@ -366,7 +445,9 @@
 }
 
 .form__container2 {
-  padding-left: 50px;
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
 }
 
 // radio
@@ -462,7 +543,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 384px;
   }
@@ -472,7 +553,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    column-gap: 112px;
+    column-gap: 135px;
   }
 
   @media (min-width: $desktop-width) {
