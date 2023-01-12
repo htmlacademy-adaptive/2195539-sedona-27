@@ -52,6 +52,7 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    margin-top: -15px;
     width: 456px;
     height: 77px;
   }

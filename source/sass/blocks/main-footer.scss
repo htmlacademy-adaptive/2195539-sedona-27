@@ -21,11 +21,13 @@
     padding-bottom: 26px;
     width: $tablet-width;
     min-height: 120px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 128px;
-    padding-right: 134px;
+    padding-left: 123px;
+    padding-right: 123px;
     justify-content: space-between;
     width: $desktop-width;
   }
