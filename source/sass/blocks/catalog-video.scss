@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -19,10 +20,10 @@
 }
 
 .catalog-video__title {
-  padding-top: 35px;
+  padding-top: 19px;
   padding-left: 18px;
   padding-right: 18px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     padding-top: 62px;
@@ -31,9 +32,9 @@
 }
 
 .catalog-video__info {
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-bottom: 40px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     padding-left: 80px;
@@ -75,7 +76,7 @@
 
 .catalog-video__icon {
   position: absolute;
-  top: 295px;
+  top: 235px;
   z-index: 1;
   min-height: 54px;
   min-width: 48px;
