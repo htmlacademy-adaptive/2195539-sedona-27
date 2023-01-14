@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 25px;
+  padding-right: 9px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -55,6 +56,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 26px;
+    padding-right: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,7 +74,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 26px;
-    padding-right: 20px;
+    padding-right: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,7 +106,24 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    top: 48%;
+    top: 45%;
+    left: 20px;
+    height: 1px;
+    width: 123px;
+    background-color: #d6d6d6;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+  }
+}
+
+.form__legend--line2::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 58%;
     left: 20px;
     height: 1px;
     width: 123px;
@@ -131,7 +150,24 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    top: 48%;
+    top: 45%;
+    right: 20px;
+    height: 1px;
+    width: 123px;
+    background-color: #d6d6d6;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+  }
+}
+
+.form__legend--line2::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 58%;
     right: 19px;
     height: 1px;
     width: 123px;
@@ -282,7 +318,7 @@
     padding-top: 10px;
     padding-left: 45px;
     padding-right: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -337,7 +373,7 @@
 
 .form__phone-icon {
   min-height: 58px;
-  min-width: 66px;
+  min-width: 58px;
   background-color: #e6e6e6;
   background-repeat: no-repeat;
   background-position: center;
@@ -346,7 +382,7 @@
 
 .form__email-icon {
   min-height: 58px;
-  min-width: 66px;
+  min-width: 58px;
   background-color: #e6e6e6;
   background-repeat: no-repeat;
   background-position: center;
@@ -371,6 +407,10 @@
   margin: 0;
   list-style: none;
   padding-left: 0;
+}
+
+.form__item-label--text {
+  text-transform: none;
 }
 
 .form__label {
@@ -426,11 +466,6 @@
   &:active .form__input[type="radio"]:checked + .form__item-mark::before {
     background-color: rgba(51, 51, 51, 0.3);
   }
-
-  // &:hover .form__input[type="checkbox"]:checked + .form__item-mark::before,
-  // .form__input[type="checkbox"]:checked + .form__item-mark::after {
-  //     fill: red;
-  // }
 
   &:active .form__item-mark {
     border: 2px solid $secondary_active;
@@ -536,7 +571,7 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
-    padding-right: 10px;
+    margin-right: -20px;
   }
 }
 
@@ -547,8 +582,7 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 36px;
   }
 }
 
@@ -565,12 +599,23 @@
   }
 }
 
+
+.form__item-feedback--order5 {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
 // button
 .form__feedback-button {
   background-color: $primary;
   width: 100%;
   min-height: 58px;
-  margin-top: 39px;
+  margin-top: 35px;
 
   &:hover {
     background-color: $primary_hover;
@@ -586,7 +631,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 83px;
+    margin-left: 77px;
     margin-right: 140px;
     width: 88%;
   }
@@ -602,15 +647,19 @@
   display: flex;
   justify-content: flex-end;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 384px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
   }
 }
 

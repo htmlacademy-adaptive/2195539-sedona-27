@@ -1,5 +1,13 @@
 .search {
   min-height: 287px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 317px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 330px;
+  }
 }
 
 .search__wrapper {
@@ -55,6 +63,11 @@
     line-height: 21px;
     padding-top: 35px;
     padding-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 47px;
   }
 }
 

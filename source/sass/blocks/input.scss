@@ -21,8 +21,11 @@
     background-color: $secondary_hover;
   }
 
-  &:active {
-    background-color: $secondary_active;
+  &:focus {
+    background-color: #ffffff;
+    border: 4px solid $secondary_hover;
+    outline: none;
+    padding-left: 12px;
   }
 
   &:disabled {
@@ -48,13 +51,17 @@
 .field {
   background-color: $secondary;
   border: none;
-  min-height: 150px;
+  min-height: 155px;
   min-width: 280px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   padding: 16px;
+
+  &:focus {
+    padding-top: 12px;
+  }
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
