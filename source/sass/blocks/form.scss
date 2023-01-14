@@ -470,6 +470,7 @@
   &:active .form__item-mark {
     border: 2px solid $secondary_active;
     background-color: $secondary_active;
+    fill-opacity: 0.3;
   }
 }
 
@@ -486,6 +487,7 @@
   width: 44px;
   min-height: 44px;
   margin-left: -15px;
+  cursor: pointer;
 }
 
 .form__item-mark {
@@ -497,16 +499,21 @@
   border-radius: 4px;
   background-color: $secondary;
   border: 2px solid $secondary;
+  cursor: pointer;
 }
 
-.form__input[type="checkbox"]:checked + .form__item-mark::before,
-.form__input[type="checkbox"]:checked + .form__item-mark::after {
+.icon {
   position: absolute;
-  top: 8px;
+  top: 12px;
   left: 11px;
-  width: 0;
-  height: 2px;
-  content: url("../img/tick.svg");
+  width: 22px;
+  height: 16px;
+  content: url("");
+  opacity: 0;
+}
+
+.form__input[type="checkbox"]:checked + .form__item-mark svg {
+  opacity: 1;
 }
 
 .form__container2 {
