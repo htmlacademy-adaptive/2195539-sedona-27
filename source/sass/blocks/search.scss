@@ -1,27 +1,37 @@
 .search {
-  padding-top: 38px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-bottom: 35px;
+  min-height: 287px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 317px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 330px;
+  }
 }
 
 .search__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 41px;
+  padding-left: 18px;
+  padding-right: 18px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 155px;
-    padding-right: 155px;
+    padding-top: 60px;
+    padding-left: 156px;
+    padding-right: 156px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 300px;
-    padding-left: 371px;
-    padding-right: 371px;
+    padding-top: 28px;
+    padding-left: 370px;
+    padding-right: 370px;
   }
 }
 
@@ -45,12 +55,19 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 38px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 35px;
+    padding-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 47px;
   }
 }
 
@@ -58,4 +75,23 @@
   background-color: $primary;
   width: 100%;
   min-height: 58px;
+
+  &:hover {
+    background-color: $primary_hover;
+  }
+
+  &:active {
+    background-color: $primary_active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $secondary_hover;
+    color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }

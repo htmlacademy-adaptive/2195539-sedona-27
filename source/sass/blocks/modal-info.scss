@@ -14,13 +14,14 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 45px 41px 45px 41px;
+  padding: 47px 41px 0 41px;
   background-color: #ffffff;
   width: $width;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
   @media (min-width: $tablet-width) {
     width: 640px;
+    height: 347px;
     padding: 0;
   }
 }
@@ -34,9 +35,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-top: 52px;
-    padding-left: 20px;
-    padding-right: 20px;
     font-size: 30px;
     line-height: 40px;
   }
@@ -50,19 +48,25 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
     padding-left: 99px;
     padding-right: 99px;
-    padding-bottom: 57px;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
 .modal-info__title {
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .modal-info__info {
@@ -70,16 +74,27 @@
 }
 
 .modal-info__button {
+  font-size: 18px;
   background-color: $primary;
-  width: 180px;
+  width: 280px;
   min-height: 58px;
 
   @media (min-width: $tablet-width) {
     width: 458px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
 .modal-info__button-wrapper {
+  background-color: #f2f2f2;
+  width: 320px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
     width: 640px;

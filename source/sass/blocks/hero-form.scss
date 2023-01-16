@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: $current;
-  min-height: 160px;
+  min-height: 158px;
   justify-content: center;
   align-items: center;
   background-image: url("../img/intro-triangle.svg"),
@@ -23,7 +23,7 @@
       url("../img/index/back-tablet-1x.jpg");
     width: $tablet-width;
     min-height: 290px;
-    background-size: 160% auto, 100% auto;
+    background-size: 156% auto, 100% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle.svg"),
@@ -48,10 +48,12 @@
 }
 
 .hero-form__image {
+  margin-top: -7px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    margin-top: -15px;
     width: 456px;
     height: 77px;
   }

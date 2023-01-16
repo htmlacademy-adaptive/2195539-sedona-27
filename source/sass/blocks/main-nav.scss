@@ -27,21 +27,53 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
     width: $desktop-width;
   }
 }
 
 .site-list__link--space {
   @media (min-width: $tablet-width) {
-    padding-right: 144px;
-    padding-left: 35px;
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.site-list__link--space2 {
+  @media (min-width: $tablet-width) {
+    margin-left: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 240px;
+  }
+}
+
+.site-list__item--left {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 87px;
+  }
+}
+
+.site-list__link--right {
+  @media (min-width: $desktop-width) {
+    padding-right: 65px;
   }
 }
 
 .site-list a {
   display: block;
-  padding: 12px 17px;
-  padding-bottom: 13px;
+  padding-top: 14px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 14px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -53,17 +85,37 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
+  &:hover {
+    background-color: $primary_hover;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: $primary_active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
     border: none;
+
+    &:hover {
+      background-color: #ffffff;
+      color: $primary;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
-  &:hover,
-  &:active {
-    color: $current;
+  @media (min-width: $desktop-width) {
+    padding-left: 4px;
+    padding-right: 10px;
   }
 }
 
@@ -87,12 +139,19 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 17px;
+  right: 20px;
   width: 23px;
   height: 4px;
   background-color: $primary;
   box-shadow: 0 10px 0 0 $primary, 0 20px 0 0 $primary;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: rgba($primary, 0.6);
+  box-shadow:
+    0 10px 0 0 rgba($primary, 0.6),
+    0 20px 0 0 rgba($primary, 0.6);
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
@@ -108,10 +167,6 @@
   }
 }
 
-//   &--active {
-//     display: block;
-//   }
-
 .main-nav--closed .site-list__item--active a {
   padding-right: 20px;
   padding-left: 20px;
@@ -119,6 +174,11 @@
 
   @media (min-width: $tablet-width) {
     color: $current;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 11px;
+    padding-left: 5px;
   }
 }
 
@@ -174,8 +234,13 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
   &:active::before,
   &:active::after {
-    background-color: rgba(#ffffff, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
