@@ -12,7 +12,7 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo site-list__link " href="index.html">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -25,13 +25,13 @@
           <li class="site-list__item  site-list__item--left">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active site-list__link--space">
+          <li class="site-list__item site-list__item--active site-list__item--space">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item site-list__link--space2">
+          <li class="site-list__item site-list__item--space2">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
-          <li class="site-list__item site-list__link--right">
+          <li class="site-list__item site-list__item--right">
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
@@ -215,7 +215,7 @@
             пока они не подорожали в
             очередной раз!</p>
         </div>
-        <span class="catalog-video__icon"></span>
+        <span class="catalog-video__icon"><span class="visually-hidden">Кнопка для воспроизведения видеоролика.</span></span>
         <a class="catalog-video__link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
@@ -228,13 +228,13 @@
               <source media="(min-width: 768px)"
                 srcset="img/catalog/video-table@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
               <img class="catalog-video__image" src="img/catalog/video-mobile.jpg"
-                srcset="img/catalog/video-mobile.jpg 1x, img/catalog/video-mobile@2x.jpg 2x" width="100%" height="177"  alt="Дорога, серпантин, горы.">
+                srcset="img/catalog/video-mobile.jpg 1x, img/catalog/video-mobile@2x.jpg 2x" width="280" height="177"  alt="Дорога, серпантин, горы.">
             </picture>
           </a>
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer social">
     <h2 class="visually-hidden">Социальные сети</h2>
     <div class="main-footer__wrapper main-footer__wrapper--catalog">
       <a class="social__title" href="#">#visitSedona</a>
@@ -275,7 +275,6 @@
       </div>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
-<script src="../js/script.js"></script>
 </html>
-copyright--catalog

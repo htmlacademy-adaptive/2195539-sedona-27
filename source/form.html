@@ -12,25 +12,26 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo site-list__link " href="index.html">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle main-nav__toggle--open button" type="button"><span class="visually-hidden">Открыть
+      <button class="main-nav__toggle main-nav__toggle--open button" type="button"><span
+          class="visually-hidden">Открыть
           меню.</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item  site-list__item--left">
+          <li class="site-list__item site-list__item--left">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__link--space">
+          <li class="site-list__item site-list__item--space">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item site-list__item--active site-list__link--space2">
+          <li class="site-list__item site-list__item--active site-list__item--space2">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
-          <li class="site-list__item site-list__link--right">
+          <li class="site-list__item site-list__item--right">
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
@@ -89,8 +90,8 @@
               <li class="form__item">
                 <label class="form__label form__label--space form__label--left" for="user_phone">Контактный
                   телефон*:</label>
-                <div class="input__wrapper">
-                  <input class="form__input input input__contact" type="tel" name="phone" required id="user_phone"
+                <div class="form__wrapper">
+                  <input class="form__input input form__input--contact" type="tel" name="phone" required id="user_phone"
                     placeholder="Введите телефон">
                   <span class="form__phone-icon"></span>
                 </div>
@@ -98,8 +99,8 @@
               <li class="form__item">
                 <label class="form__label form__label--space form__label--left" for="user_email">Электронная
                   почта*:</label>
-                <div class="input__wrapper">
-                  <input class="form__input input input__contact" type="email" name="email" required id="user_email"
+                <div class="form__wrapper">
+                  <input class="form__input input form__input--contact" type="email" name="email" required id="user_email"
                     placeholder="Введите e-mail">
                   <span class="form__email-icon"></span>
                 </div>
@@ -107,9 +108,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__feedback form__name form__name--bottom-border form__name--padding3">
-            <div class="form__container">
-              <legend class="form__legend form__legend--line form__legend--padding3">Ваше общее впечатление:</legend>
-            </div>
+            <legend class="form__legend form__legend--line form__legend--padding3">Ваше общее впечатление:</legend>
             <ul class="form__list form__list-feedback">
               <li class="form__item form__item-feedback">
                 <label class="form__label form__label-check form__label-check--text" for="user_plus">
@@ -135,10 +134,8 @@
             </ul>
           </fieldset>
           <fieldset class="form__name form__name--bottom-border form__name--padding4">
-            <div class="form__container">
               <legend class="form__legend form__legend--line form__legend--padding4">Посещенные <br>
                 достопримечательности:</legend>
-            </div>
             <ul class="form__list form__list-feedback">
               <li class="form__item form__item-feedback form__item-feedback--order3">
                 <div class="form__container2">
@@ -170,7 +167,7 @@
                   <span class="form__item form__item-label form__item-label--padding">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="form__item  form__item-feedback--order4">
+              <li class="form__item  form__item-feedback form__item-feedback--order4">
                 <div class="form__container2">
                   <label class="form__label form__label-check form__label-check--padding" for="user_park">
                     <input class="form__input" type="checkbox" name="park" id="user_park" checked>
@@ -203,13 +200,11 @@
             </ul>
           </fieldset>
           <fieldset class="form__name form__name--padding5">
-            <div class="form__container">
               <legend class="form__legend form__legend--line2 form__legend--padding5">Опишите свои эмоции:</legend>
               <label class="form__label form__label--center" for="feeling">
                 <textarea class="form__input field input" name="emotions" id="feeling"
                   placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
-            </div>
           </fieldset>
           <fieldset class="form__name form__name--button-size form__name--padding6">
             <div class="form__name-wrapper">
@@ -221,7 +216,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer social">
     <h2 class="visually-hidden">Социальные сети</h2>
     <div class="main-footer__wrapper main-footer__wrapper--form">
       <a class="social__title" href="#">#visitSedona</a>
@@ -263,7 +258,7 @@
     </div>
   </footer>
   <!-- модальное окно ошибки -->
-  <div class="modal-error___wrapper modal-error--close">
+  <div class="error error--wrapper error--close">
     <div class="modal-error">
       <div class="modal-error__title">
         <p class="modal-error__header">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
@@ -275,7 +270,7 @@
     </div>
   </div>
   <!-- модальное окно информационное-->
-  <div class="modal-info__wrapper modal-info--close">
+  <div class="info info--wrapper info--close">
     <div class="modal-info">
       <div class="modal-info__title">
         <p class="modal-info__header">Ваш отзыв отправлен!</p>
@@ -292,5 +287,4 @@
   </div>
   <script src="../js/script.js"></script>
 </body>
-
 </html>

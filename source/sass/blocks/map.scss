@@ -1,6 +1,5 @@
 .map__wrapper {
   overflow: hidden;
-  padding-bottom: 100%;
   position: relative;
   min-height: 350px;
 
@@ -17,4 +16,30 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.map__link {
+  order: 1;
+  width: 100%;
+}
+
+.map__google {
+  order: 3;
+}
+
+.map__image {
+  display: block;
+  height: 350px;
+  object-fit: unset;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 350px;
+  }
 }

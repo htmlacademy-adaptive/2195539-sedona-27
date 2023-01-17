@@ -38,16 +38,6 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.input__contact {
-  min-height: 58px;
-  min-width: 222px;
-  color: #000000;
-
-  @media (min-width: $desktop-width) {
-    min-width: 344px;
-  }
-}
-
 .field {
   background-color: $secondary;
   border: none;
@@ -65,5 +55,15 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+  }
+}
+
+.form__input--contact {
+  min-height: 58px;
+  min-width: 222px;
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    min-width: 344px;
   }
 }

@@ -136,15 +136,15 @@
   }
 }
 
-.form__container {
-  @media (min-width: $tablet-width) {
-    width: 648px;
-  }
+// .form__container {
+//   @media (min-width: $tablet-width) {
+//     width: 648px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 1000px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 1000px;
+//   }
+// }
 
 .form__legend--line::after {
   @media (min-width: $tablet-width) {
@@ -390,7 +390,7 @@
   background-image: url("../img/mail.svg");
 }
 
-.input__wrapper {
+.form__wrapper {
   display: flex;
   justify-content: flex-end;
 
