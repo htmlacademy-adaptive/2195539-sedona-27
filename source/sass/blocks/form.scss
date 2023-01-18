@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 50px;
+    padding-right: 75px;
   }
 }
 
@@ -62,7 +62,7 @@
   @media (min-width: $desktop-width) {
     width: 960px;
     padding-top: 65px;
-    padding-left: 36px;
+    padding-left: 105px;
   }
 }
 
@@ -81,10 +81,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
     padding-top: 48px;
     padding-bottom: 21px;
-    padding-left: 46px;
+    padding-left: 45px;
   }
 }
 
@@ -104,8 +103,9 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
-    padding-top: 49px;
-    padding-bottom: 30px;
+    padding-top: 64px;
+    padding-left: 76px;
+    padding-bottom: 25px;
   }
 }
 
@@ -285,7 +285,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 45px;
+    padding-left: 75px;
     padding-right: 30px;
   }
 }
@@ -317,14 +317,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 648px;
     padding-top: 20px;
     padding-left: 63px;
     padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
   }
 }
 
@@ -346,7 +350,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 63px;
+    padding-left: 97px;
     padding-right: 63px;
   }
 }
@@ -417,11 +421,6 @@
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 32px;
-    width: 100%;
-  }
 }
 
 .form__list {
@@ -435,10 +434,6 @@
   padding-left: 0;
 }
 
-.form__item-label--text {
-  text-transform: none;
-}
-
 .form__label {
   display: flex;
   justify-content: flex-start;
@@ -450,6 +445,10 @@
   text-transform: uppercase;
   padding-left: 16px;
   color: #333333;
+}
+
+.form__item-label--text {
+  text-transform: none;
 }
 
 .form__label--center {
@@ -470,6 +469,10 @@
 .form__label--left {
   @media (min-width: $tablet-width) {
     padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 3px;
   }
 }
 
@@ -564,12 +567,19 @@
 .form__item-feedback {
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 290px;
     flex-wrap: wrap;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    width: 307px;
+.form__list-feedback--right {
+  @media (min-width: $tablet-width) {
+    padding-right: 94px;
+  }
+}
+
+.form__list-feedback--right2 {
+  @media (min-width: $tablet-width) {
+    padding-right: 59px;
   }
 }
 
@@ -577,6 +587,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 25px;
   }
 
@@ -586,7 +597,6 @@
     padding-top: 17px;
   }
 }
-
 
 .form__container2 {
   @media (min-width: $tablet-width) {
