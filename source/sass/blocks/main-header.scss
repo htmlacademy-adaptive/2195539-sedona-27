@@ -2,7 +2,7 @@
   position: relative;
   width: 320px;
   background-color: #ffffff;
-  min-height: 56px;
+  height: 56px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -11,12 +11,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: $tablet-width;
+    width: 100%;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 100%;
     margin: 0 auto;
   }
 }
