@@ -33,9 +33,6 @@
     top: 0;
     margin: 0;
     left: calc(50% - 92.5px);
-  }
-
-  @media (min-width: $desktop-width) {
-    z-index: 1;
+    z-index: 4;
   }
 }
