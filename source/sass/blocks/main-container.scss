@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   @media (min-width: $desktop-width) {
