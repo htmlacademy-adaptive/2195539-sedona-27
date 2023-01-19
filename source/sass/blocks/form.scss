@@ -60,9 +60,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    width: 100%;
     padding-top: 65px;
-    padding-left: 105px;
+    padding-left: 0;
+    padding-bottom: 32px;
+    padding-right: 72px;
   }
 }
 
@@ -81,9 +83,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 48px;
-    padding-bottom: 21px;
-    padding-left: 45px;
+    width: 100%;
+    padding-top: 49px;
+    padding-bottom: 40px;
+    margin-left: -14px;
   }
 }
 
@@ -98,13 +101,13 @@
     width: 648px;
     padding-top: 17px;
     padding-right: 10px;
-    padding-bottom: 26px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    width: 100%;
     padding-top: 64px;
-    padding-left: 76px;
+    padding-left: 10px;
     padding-bottom: 25px;
   }
 }
@@ -301,8 +304,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 63px;
-    padding-right: 63px;
+    padding-left: 128px;
+    padding-right: 55px;
+    width: 100%;
   }
 }
 
@@ -325,10 +329,9 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 0;
-    padding-right: 0;
+    justify-content: space-between;
     width: 100%;
+    padding-left: 117px;
   }
 }
 
@@ -350,8 +353,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 97px;
-    padding-right: 63px;
+    padding-left: 196px;
+    padding-right: 196px;
+    width: 100%;
   }
 }
 
@@ -369,6 +373,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 63px;
     padding-right: 63px;
+    width: 100%;
   }
 }
 
@@ -581,6 +586,16 @@
   @media (min-width: $tablet-width) {
     padding-right: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.form__item-label--padding {
+  @media (min-width: $desktop-width) {
+    padding-right: 12px;
+  }
 }
 
 .form__list-feedback {
@@ -592,9 +607,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 89px;
-    padding-right: 20px;
-    padding-top: 17px;
+    column-gap: 50px;
   }
 }
 
@@ -629,9 +642,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 77px;
-    margin-right: 140px;
-    width: 88%;
+    margin-right: 142px;
+    width: 100%;
   }
 
   &:disabled {
