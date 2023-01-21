@@ -2,9 +2,10 @@
   position: relative;
   width: 320px;
   background-color: #ffffff;
-  height: 56px;
+  min-height: 56px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
