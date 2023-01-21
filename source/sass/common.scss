@@ -33,6 +33,7 @@ body {
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 }
 
